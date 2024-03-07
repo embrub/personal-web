@@ -1,2 +1,2 @@
-# personal-site
-delete twitter, make a website. personal artblog hosted by neocities.
+# the site™️
+Personal artblog hosted by neocities.
