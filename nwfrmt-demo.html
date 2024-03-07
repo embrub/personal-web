@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tidbits</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=K2D">
+
+    <style>
+        :root {
+            --bg: #1c1b19;
+            --text: whitesmoke;
+            --ex: navy;
+            --bold: tomato;
+            --green: rgb(25, 170, 25);
+        }
+
+        #dark {
+            display: none;
+        }
+
+        #play {
+            display: none;
+        }
+
+        #dark {
+            display: inline;
+        }
+
+        #light {
+            display: none;
+        }
+
+        :root {
+            --black: #1c1b19;
+            accent-color: mediumblue;
+        }
+
+        ::selection {
+            color: whitesmoke;
+            background: mediumblue;
+        }
+
+        body {
+            margin: 2% 5%;
+            color: var(--text);
+            background-image: radial-gradient(#016551, #016551, #024035);
+            background-attachment: fixed;
+            font-family: K2D;
+            word-spacing: 0.1rem;
+            display: flex;
+        }
+
+        pre {
+            display: inline-block;
+            border-left: 2px solid navy;
+            background: var(--ex);
+            color: var(--text);
+            padding: 10px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            width: 100%;
+            overflow: auto;
+            box-shadow: -2px 0px 0px green, -4px 0px 0px darkred;
+            margin: 0rem;
+        }
+
+        a {
+            color: var(--green);
+            border: 1px solid transparent;
+            border-radius: 5px;
+            padding: 0.1rem 0.4rem;
+        }
+
+        a:hover {
+            text-shadow: 1px 0px 0px mediumblue, -1px 0px 0px darkred;
+            border: 1px solid var(--green);
+        }
+
+        b,
+        i,
+        em,
+        strong {
+            color: var(--bold);
+        }
+
+        .title {
+            text-shadow: 0px -1px 0px darkred, -1px 1px 0px mediumblue, 1px 1px 0px green;
+        }
+
+        h3 {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: none;
+            color: none;
+            background: none;
+            height: 3px;
+            box-shadow: 0px 1px 0px darkred, 0px 2px 0px green, 0px 3px 0px mediumblue;
+        }
+
+        ul {
+            margin-left: 0px;
+            list-style: none;
+        }
+
+        li {
+            margin-left: -40px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        main,
+        .side {
+            background: var(--bg);
+            box-sizing: border-box;
+            border-radius: 2px;
+            box-shadow: 2px 0px 0px mediumblue, 4px 0px 0px green, 6px 0px 0px darkred, -2px 0px 0px mediumblue, -4px 0px 0px green, -6px 0px 0px darkred;
+        }
+
+        main {
+            padding: 1vw 5vw;
+            width: 70%;
+            margin-bottom: 2%;
+            float: left;
+        }
+
+        .sidecontainer {
+            width: 20%;
+            margin-right: 5%;
+        }
+
+        .side {
+            width: 80%;
+            margin-right: 5%;
+
+            padding: 1vw 3vw;
+            position: sticky;
+            top: 2%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="sidecontainer">
+        <div class="side">
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="#fit">fit content</a></li>
+                    <li><a href="#list">custom list bullets</a></li>
+                    <li><a href="#target">css pages</a></li>
+                    <li><a href="#scheme">color schemes</a></li>
+                    <li><a href="#lines">text on background lines</a></li>
+                </ul>
+                <hr>
+                <p><a href="https://solaria.neocities.org/">home</a></p>
+            </nav>
+        </div> <!-- side -->
+    </div> <!-- side container -->
+
+    <main>
+        <h1 class="title">CSS Tidbits!</h1>
+        <hr>
+
+        <p>Little CSS bits that I didn't learn from W3schools. More to be added!</p>
+        <p>The following demos assume you know some basic CSS, like making class attributes. If you're not quite there
+            yet, I highly recommend <a href="https://www.w3schools.com/css/" target="_blank">W3schools!</a></p>
+
+        <hr>
+
+        <h2 id="fit">Fit Content Width</h2>
+        <p>How to make a block element the width of its content without making it an inline block element, helpful if
+            they are narrow and you don't want them to sit next to each other.</p>
+        <pre style="width: fit-content;">width: fit-content;</pre>
+        <p style="width: fit-content; border: 1.5px solid var(--bold); padding: 5px; border-radius: 5px;">Thats it!</p>
+        <hr>
+
+        <h2 id="list">Custom List Bullets</h2>
+        <p>You can change the symbol used for bulleted lists using the <strong>::marker</strong> psuedo element.</p>
+        <pre>li::marker {
+  content: '☛ ';
+  color: black;
+  font-size: 1.2em;}</pre>
+        <p>The <strong>content</strong> property is what changes the symbol, you can copy paste a symbol into the
+            quotation marks, or you can even use letters! You can change a few things like color and font properties,
+            but not much else.</p>
+
+        <hr>
+
+
+        <h2 id="target">Using :target to Create Pages</h2>
+        <p>I learned this from <a href="https://john-doe.neocities.org/#home">John Doe</a>!</p>
+        <p>You can use JavaScript to make fake pages within one HTML document, but you can also use CSS! Both the JS and
+            CSS methods work by hiding sections by default, and then showing them when a button or link is activated.
+            The CSS method makes use of the <strong>:target</strong> psuedo-class.</p>
+        <div class="pgex">
+            <p>Pretend this is a page with some navigation links.</p>
+            <ul>
+                <li><a href="#pg1">page 1</a></li>
+                <li><a href="#pg2">page 2</a></li>
+                <li><a href="#pg3">page 3</a></li>
+            </ul>
+            <div class="pg" id="pg1">
+                <p>Heres the first page content.</p>
+            </div>
+            <div class="pg" id="pg2">
+                <p>Heres the second page content.</p>
+            </div>
+            <div class="pg" id="pg3">
+                <p>Heres the third page content.</p>
+            </div>
+        </div>
+
+        <p>The CSS is really simple! Just make a class for your pages and style them to be hidden, then add :target to
+            the page class (like you would add :hover to link or button elements), and make it display as a block.</p>
+        <pre>.page {
+  display: none;}
+  
+.page:target {
+  display: block;}</pre>
+        <p>In the HTML you will have to put the "pages" in a section, article, or div element (depending on what is most
+            accurate), and give them your page class. <em>They should also each have a unique ID</em> (for the links to
+            work.)</p>
+        <pre>&lt;div class="page" id="pg1">
+  Heres the first page content.
+&lt;/div>
+
+&lt;div class="page" id="pg2">
+  Heres the second page content.
+&lt;/div>
+
+&lt;div class="page" id="pg3">
+  Heres the third page content.
+&lt;/div></pre>
+
+        <p>Your navigation links should have the ID of its corresponding page in its src attribute (like you normally
+            would for creating a table of contents in a page.)</p>
+        <pre>&lt;ul>
+  &lt;li>&lt;a href="#pg1">page 1&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="#pg2">page 2&lt;/a>&lt;/li>
+  &lt;li>&lt;a href="#pg3">page 3&lt;/a>&lt;/li>
+&lt;/ul></pre>
+
+        <p>Note that your homepage will not disappear if you don't give it your page class (instead it will show along
+            with whatever other page the vistor clicked on), but if you do give it the page class, your homepage will
+            not automatically show up when someone visits your site (instead they just get what ever is out of the
+            page containers). If you want a home "page" to display when the user comes to your main page, but disapear
+            when they select another "page", you <em>could</em> include its anchor in the link you provide.</p>
+        <pre>a href="https://name.site.org/#home"</pre>
+
+        <p>However, if you want your home "page" to be shown by default with just "<strong>a
+                href="https://name.site.org</strong>", I cobbled something together.</p>
+        <pre>.page:target ~ #home {
+        display: none;}</pre>
+        <p>This selector specifies the element identified with #home in the HTML <em>after</em> a "page". Because of the
+            <strong>:target</strong>, <strong>#home</strong> is only hidden when a <strong>.page</strong> is clicked on,
+            thus if no page is clicked on, #home will remain visible.</p>
+        <p><em>Note:</em> #home must be after all the .pages in the HTML for this to work!</p>
+
+        <hr>
+
+        <h2 id="lines">Text on Background Lines</h2>
+
+        <p class="textbg">How to make text fall on lines of a background image (ex. notebook paper). This takes a little
+            trouble shooting with dimensions, but revolves around one key property: <strong>line-height.</strong></p>
+
+        <pre>.example {
+  background-image: url(https://solaria.neocities.org/recipes/linetile.png);
+  background-size: 20px; 
+  line-height: 18.5px;}</pre>
+
+        <p class="textbg">I tried making lines under each line of text using bottom-border and text-decoration:
+            underline but was unsucessful. Luckily a small background image file works just fine.</p>
+        <img src="https://solaria.neocities.org/recipes/linetile.png"
+            alt="ivory background with thin black line at the bottom, repeats to make a lined background for the next four paragraphs">
+        <p class="textbg">Since the dimensions are small, this file naturally tiles to make evenly spaced lines. Now it
+            makes wider spaces than I wanted, so I resized it to 20px, but you could also crop some of the blank space
+            out of the file to make the tile shorter.</p>
+        <p class="textbg">I base <strong>line-height</strong> off of the height of the background image (before it is
+            tiled). I then adjust it by trial and error, making it shorter if the text starts to run below the line, or
+            making it longer if the text starts floating higher above the line.</p>
+        <p class="textbg" style="font-size: 12px; width: 300px;">Note that <em>font-size</em> does not matter, as long
+            as it is not bigger than the <em>line-height.</em></p>
+        <p class="textbg">sometimes making the <em>line-height</em> and vertical paragraph <em>margin</em> the same
+            height as the untiled background works, but not always.</p>
+
+    
+
+        <hr>
+        <br>
+    </main> <!-- main -->
+
+</body>
+
+</html>

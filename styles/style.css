@@ -1,0 +1,609 @@
+@font-face {
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    /* src: url(https://fonts.gstatic.com/s/abel/v18/MwQ5bhbm2POE2V9BPbh5uGM.woff2) format('woff2'); */
+    src: url(../styles/1052d6ca3993ae24a932304560a4c8b4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+    /* general */
+    --black: #1d1b1b;
+    --blue: #787d79;
+    --backdrop: #e0d7d2;
+    --backdrop-dark: #c0bbb5;
+    --highlight-light: #bc6a41;
+    --highlight-dark: #A33B29;
+
+    --links: #5f6b6c;
+    --text: #100202;
+
+    /* element-specific */
+    --topbar: #e9dfd9;
+    --grid: #c0bbb5b5;
+    --tltp-bckgrnd: var(--black);
+    --tltp-text: var(--backdrop);
+    --scroll: var(--black);
+    /* --journal: #7c75713a; */
+}
+
+[data-dark-mode]{ 
+    /* general */
+    --black: #222020;
+    --blue: #797D78;
+    --backdrop: #100d0d;
+    --backdrop-dark: var(--black);
+    --highlight-light: #b24657;
+    --highlight-dark: #981c45;
+
+    --links: var(--highlight-light);
+    --text: #828882;
+
+    /* element-specific */
+    --topbar: var(--blue);
+    --grid: transparent;
+    --tltp-bckgrnd: var(--backdrop);
+    --tltp-text: var(--blue);
+    --scroll: var(--highlight-light);
+    /* --journal: #7c75713a; */
+}
+
+html {
+    box-sizing: border-box;
+    vertical-align: baseline;
+    align-items: baseline;
+    max-width: fit-content;
+
+    font-family: monospace;
+    /* word-spacing: 1px;
+    letter-spacing: 0.15px; */
+    font-size: 1.060em;
+}
+
+body {
+    margin: 0 auto;
+    background: var(--backdrop);
+    color: var(--text);
+    background-size: 35px 35px;
+    background-image:
+        linear-gradient(to right, var(--grid) 1.5px, transparent 1.5px),
+        linear-gradient(to bottom, var(--grid) 1.5px, transparent 1.5px);
+    display: flex;
+}
+
+/* used for main content block & previews in sqntl & artblog*/
+.container {
+    display: flex;
+    /* width: 100%; */
+    margin-top: 0px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.38em;
+    background-color: var(--text);
+    color: var(--backdrop-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Abel', 'Lucida Sans', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    margin: 0.5em 0;
+}
+
+ul{
+    list-style-type: square;
+}
+
+ul > ul
+{
+    list-style-type: circle; 
+}
+
+summary, pre{
+    /* 1st=top, 2nd=right, 3rd=bottom, 4th=left */
+    padding: 2.5px;
+    padding-left: 14px;
+    padding-bottom: 0;
+}
+
+hr {
+    border: solid 1.5px var(--text);
+    margin: 25px 0;
+    /* width: 20px; */
+    width: 100%;
+    background-color: var(--text);
+    padding: 0.3px;
+}
+
+hr.small {
+    border: solid 1.5px var(--black);
+    width: 20px;
+}
+
+img {
+    border-radius: 5px;
+    border: solid 1px var(--black);
+}
+
+.icon{
+    width: 168px;
+}
+
+iframe {
+    width: 80%;
+    height: 45vh;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* used for main content block & previews in sqntl & artblog*/
+.maincontainer {
+    display: flex;
+    margin-top: 0px;
+    margin: 5% 8%;
+    max-width: 1235px;
+    /* margin: 5% 10%;
+    max-width: 1400px; */
+}
+
+.highlight {
+    background-color: #817b6a5a;
+}
+
+.highlight-2{
+    background-color: var(--text);
+    color: var(--backdrop-dark);
+}
+
+noscript{
+    width: 170px;
+}
+
+/* TOP MENU BAR */
+
+/* for the love of fuck dont edit this id */
+#topbar {
+    /* 1st=top/bottom, 2nd=left/right */
+    padding: 13px 30px;
+    background-color: var(--black);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    color: var(--topbar);
+}
+
+#topbar a {
+    font-family: 'Abel', sans-serif;
+    color: var(--topbar);
+    font-weight: 100;
+    font-size: 1.06em;
+    text-decoration: none;
+    /* padding-right: 34.5vw; */
+}
+
+.index{
+    padding-right: 27.5vw;
+}
+
+.index-small{
+    padding-right: 32vw;
+}
+
+#topbar a:hover {
+    color: var(--highlight-dark);
+    font-style: oblique;
+}
+
+.buttons img{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    height: 31px;
+    width: 80px;
+}
+
+.blinkies img {
+    padding: 0px;
+    height: 20px;
+    width: 150px;
+}
+
+/* SIDE MENU BAR */
+#sidebar {
+    top: 15%;    
+    position: sticky;
+    order: 1;
+    width: max-content;
+
+    /* IMPORTANT DO NOT REMOVE */
+    flex-direction: column;
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.sidecontainer {
+    margin-right: 20px;
+    padding: 5px;
+    padding-left: 0;
+    width: 22%;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+aside a.top-btn,
+aside a:link.top-btn {
+    text-decoration: none;
+    color: var(--backdrop);
+}
+
+.top-btn{
+    float: left;
+    font-family: 'Abel', sans-serif;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: var(--text);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 20px 12px;
+    font-size: 1.05em;
+    border-radius: 5px;
+    top: 88%;
+    margin-left: 45%;    
+}
+
+.side-btn {
+    font-family: 'Abel', sans-serif;
+    
+    margin: 3.5px 0;
+    padding: 11px;
+    background-color: var(--black);
+    color: var(--blue);
+    font-size: 1.06em;
+    padding-left: 31.5px;
+}
+
+.side-btn.theme{
+    padding: 3.5px;
+    padding-left: 31.5px;
+    background-color: var(--blue);
+    color: var(--black);
+}
+
+.side-btn:hover,
+.side-btn:hover a {
+    background-color: var(--blue);
+    color: var(--highlight-dark);
+    font-style: oblique;
+    cursor: pointer;
+}
+
+.burger {
+    /* display: none; */
+    cursor: pointer;
+    visibility: hidden;
+    border: none;
+    background: none;
+    display: inline;
+    color: var(--blue);
+}
+
+/* DROPDOWN MENU */
+.dropdown-content, .tooltip .tooltiptext{
+    visibility: hidden;
+    position: absolute;
+    background-color: var(--highlight-light);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-family: sans-serif;
+    font-weight: 120;
+    padding-left: 45px;
+    padding-right: 20px;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 9.5px;
+    justify-content: flex-start;
+    font-size: 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--blue);
+    color: var(--text);
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+}
+
+/* MAIN CONTENT BLOCK */
+.scroll-updates { 
+    background-color: var(--backdrop);
+    display: block;
+    margin: 10px auto;
+    border-style: none none none solid;
+    border-color: var(--black);
+    border-width: 7px;
+    width: 90%;
+    padding: 0 20px;
+    height: 175px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+main {
+    float: right;
+}
+
+section {
+    background-color: var(--backdrop-dark);
+    border: 2px solid var(--black);
+    border-radius: 20px;
+    box-shadow: 0.55em 0.55em var(--text);
+    margin: 2.5em 0.5em;
+    padding: 1em 2.5em;
+}
+
+blockquote {
+    border-style: none none none solid;
+    border-color: var(--blue);
+    border-width: 4px;
+    padding: 10px;
+    font-style: italic;
+}
+
+.page-banners {
+    width: calc(100% - 15vh);
+    display: block;
+    margin: 10px auto;
+}
+
+/* GALLERY STUFF */
+
+/* banners before monthly galleries */
+/* try not to change anything here */
+.preview, .tooltip {
+    position: relative;
+    justify-content: center;
+    /* 1st=top, 2nd=right, 3rd=bottom, 4th=left */
+    margin: 15px 10px 5px 15px;
+}
+
+.preview img {
+    width: 100%;
+    margin: 0;
+    border: 2.5px solid var(--backdrop-dark);
+}
+
+.preview a img:hover {
+    border: 2.5px solid var(--highlight-light);
+    padding: none;
+}
+
+@media only screen and (max-width : 550px) {
+    .blank{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/* for monthly entries page */
+
+.gallery img{
+    width: 29%;
+    height: 25vw;
+    margin: 4.5px;
+    object-fit: cover;
+}
+
+/* for the doodle page */
+.gallery-full img {
+    display: inline-block;
+    width: 46.5%;
+    margin: 0.5vw;
+}
+
+/* for journal tab */
+.journal {
+    margin: 15px 0;
+    color: var(--text);
+    /* background-color: #7c75713a; */
+    background-color: #7c757137;
+    float: left;
+    padding: 5px 0;
+    border-style: solid none none none;
+    border-color: var(--text);
+    border-width: 7px;
+    max-width: 100%;
+    width: fit-content;
+}
+
+section img{
+    max-width: 95%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* SCROLL */
+::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4); */
+    background-color: var(--backdrop-dark);
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+    background-color: var(--scroll);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll);
+    cursor: pointer;
+}
+
+#sidebar noscript a,
+a:link,
+a:visited,
+a:active{
+    text-decoration: underline;
+    /* text-decoration-style: double; */
+    color: var(--links);
+}
+
+a:hover {
+    color: var(--highlight-dark);
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+::selection {
+    background: var(--highlight-light);
+}
+
+@media only screen and (max-width : 820px) {
+    .icon{
+        width: 140px;
+    }
+    .sidecontainer {
+        padding: 0;
+        margin: 0;
+        width:fit-content;
+        height: 100%;
+    }
+    .side-btn, .side-btn.theme{
+        padding-right: 0;
+    }
+    main{
+        margin: 0;
+        margin-top: 2.5em;
+    }
+    /* if you want to return the sidebar to the top of the screen, get rid of this */
+    .maincontainer{
+        margin: 0 1.5%;
+    }
+    .scroll-updates{
+        width: fit-content;
+    }
+    .page-banners{
+        width: 100%;
+    }
+    .gallery img{
+        width: 46.5%;
+        margin: 4px;
+        margin-right: 0;
+        height: 45vh;
+    }
+    .preview {
+    /* 1st=top, 2nd=right, 3rd=bottom, 4th=left */
+    margin: 15px 0 5px 13px;    
+    }
+    .gallery-full img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 15px auto;
+    }
+    iframe {
+        width: 100%;
+        height: 38vh;
+        /* margin: auto;
+        display: block;
+        border-radius: 5px; */
+    }
+    .top-btn{
+        margin-left: -35px;
+        top: 90%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    html{
+        font-size: normal;
+    }
+    .index{
+        padding-right: 18vw;
+    }
+}
+
+@media only screen and (min-width: 551px){
+    #sidebar{
+        display: inline-flex !important;
+    }
+}
+
+@media only screen and (max-width : 550px) {
+    #sidebar, 
+    #sidebar img, 
+    #sidebar p {
+        display: none;
+    }
+    main{
+        padding-left: 0;
+    }
+    .side-btn, .side-btn.theme{
+        padding-left: 5px;
+        font-size: medium;
+    }
+    .preview {
+        margin: 25px 20px;
+    }
+    .container{
+        display: block;
+    }
+    iframe{
+        width: 100%;
+        height: 50vw;
+    }
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+    section {
+        border: 2px solid var(--black);
+        border-radius: 20px;
+        margin: 2.5em 1em;
+        padding: 0.5em 1.5em;
+    }
+    .burger {
+        margin: 0;
+        margin-right: 7px;
+        margin-left: -13px;
+        visibility: visible;
+        font-size: x-large;
+        padding: 0;
+    }
+    #topbar {
+        padding: 10px 30px;
+    }
+    #topbar a{
+        font-size: 1em;
+    }
+    .journal img{
+        max-width: 100%;
+    }
+    .top-btn{
+        padding: 30px 15px;
+    }
+    .preview {
+        margin: 25px 5px;
+    }
+    .index{
+        padding-right: 4.5vw;
+    } 
+    .index-small{
+        padding-right: 10vw;
+    }
+}
