@@ -1,0 +1,11 @@
+#testing
+template.html
+nwfrmt-demo.html
+
+#mac-specific
+.DS_Store
+
+#incompatible filetypes
+*.mp*
+*.ogg
+*.wav
