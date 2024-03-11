@@ -88,7 +88,7 @@ h1 {
 
 h1, h2, h3, h4, h5, h6 {
     /* font-family: Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Abel', 'Lucida Sans', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Abel', 'Arial Narrow', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
     margin: 0.5em 0;
 }
@@ -363,7 +363,7 @@ blockquote {
 }
 
 .page-banners {
-    width: calc(100% - 15vh);
+    width: 81.5vh;
     display: block;
     margin: 10px auto;
 }
@@ -495,16 +495,18 @@ a:hover {
     }
     /* if you want to return the sidebar to the top of the screen, get rid of this */
     .maincontainer{
-        margin: 0 1.5%;
+        /* margin: 0 1.5%; */
+        margin: 0;
     }
     .scroll-updates{
         width: fit-content;
     }
     .page-banners{
-        width: 100%;
+        width: max-content;
+        margin: 0 auto;
     }
     .gallery img{
-        width: 46.5%;
+        width: 46.15%;
         margin: 4px;
         margin-right: 0;
         height: 45vh;
@@ -581,8 +583,8 @@ a:hover {
     }
     .burger {
         margin: 0;
-        margin-right: 7px;
-        margin-left: -13px;
+        margin-right: 0;
+        margin-left: -15px;
         visibility: visible;
         font-size: x-large;
         padding: 0;
@@ -591,7 +593,7 @@ a:hover {
         padding: 10px 30px;
     }
     #topbar a{
-        font-size: 1em;
+        font-size: 0.97em;
     }
     .journal img{
         max-width: 100%;
