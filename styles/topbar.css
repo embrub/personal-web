@@ -1,9 +1,0 @@
-#topbar{
-    padding-right: 34.5vw;
-}
-
-@media only screen and (max-width : 550px) {
-    #topbar{
-        padding-right: 15vw;
-    }
-}

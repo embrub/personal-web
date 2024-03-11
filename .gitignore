@@ -1,6 +1,13 @@
 #testing
 template.html
-nwfrmt-demo.html
+pre-button-style.css
+pre-purge/
+buttons/
+alt.js
+
+#scrapped
+seeyour2.jpg
+seeyour1-final.jpg
 
 #mac-specific
 .DS_Store

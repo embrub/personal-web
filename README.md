@@ -1,2 +1,2 @@
 # the site™️
-Personal artblog hosted by neocities.
+personal artblog/hobbyist endeavor, built w good ol html, css, & js and hosted by neocities.
