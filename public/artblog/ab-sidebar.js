@@ -65,7 +65,7 @@ const html = document.querySelector('html');
 let theme = localStorage.getItem('theme') ?? 'system';
 document.addEventListener("DOMContentLoaded", () => {
     if (localStorage.getItem('theme') == 'dark') {
-        document.querySelector('.icon').src = '../images/icon2.png';
+        document.querySelector('.icon').src = '../../images/icon2.png';
         document.querySelector('html').toggleAttribute('data-dark-mode');
     }
 });
@@ -74,13 +74,13 @@ document.addEventListener("DOMContentLoaded", () => {
 toggle.addEventListener('click', () => {
     const icon = document.querySelector('.icon');
     if (theme == 'light') {
-        icon.src = '../images/icon2.png';
+        icon.src = '../../images/icon2.png';
         theme = 'dark';
         html.toggleAttribute('data-dark-mode');
         document.body.style.transition = 'background 0.5s';
         console.log("Theme set to:", theme);
     } else {
-        icon.src = '../images/icon.png';
+        icon.src = '../../images/icon.png';
         theme = 'light';
         html.toggleAttribute('data-dark-mode');
         document.body.style.transition = 'background 0.5s';
