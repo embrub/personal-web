@@ -495,8 +495,7 @@ a:hover {
     }
     /* if you want to return the sidebar to the top of the screen, get rid of this */
     .maincontainer{
-        /* margin: 0 1.5%; */
-        margin: 0;
+        margin: 0 1.5%;
     }
     .scroll-updates{
         width: fit-content;
@@ -580,6 +579,9 @@ a:hover {
         border-radius: 20px;
         margin: 2.5em 1em;
         padding: 0.5em 1.5em;
+    }
+    .maincontainer{
+        margin: 0;
     }
     .burger {
         margin: 0;
