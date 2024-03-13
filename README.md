@@ -1,4 +1,4 @@
-# the site™️
+# THE SITE™️
 source code for embrub's personal artblog/hobbyist endeavor on neocities.
 
 ## XTRAS
