@@ -24,22 +24,13 @@ sb.innerHTML +=
         </div>
     </a>
     <a href="../../journal/index.html">
-        <div class="dropdown">
-            <div class="side-btn">
-                &raquo; JOURNAL
-            </div>
-            <nav aria-label="journal-contents" class="dropdown-content">
-                <a href="../../journal/index.html">&rsaquo; page 1</a>
-                <a href="../../journal/2.html">&rsaquo; page 2</a>
-                <a href="../../journal/3.html">&rsaquo; page 3</a>
-            </nav>
-        </div>
+        <div class="side-btn"> &raquo; JOURNAL </div>
+    </a>
+    <a href="../../ocs/index.html">
+        <div class="side-btn"> &raquo; OCs</div>
     </a>
     <a href="../../favorites/index.html">
         <div class="side-btn"> &raquo; FAVORITES </div>
-    </a>
-    <a href="../../sequential/index.html">
-        <div class="side-btn"> &raquo; SQNTL</div>
     </a>
     <a href="../../info/index.html">
         <div class="side-btn"> &raquo; INFO</div>

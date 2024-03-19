@@ -28,11 +28,11 @@ sb.innerHTML +=
                 &raquo; JOURNAL
         </div>
     </a>
+    <a href="../ocs/index.html">
+        <div class="side-btn"> &raquo; OCs</div>
+    </a>
     <a href="../favorites/index.html">
         <div class="side-btn"> &raquo; FAVORITES </div>
-    </a>
-    <a href="../sequential/index.html">
-        <div class="side-btn"> &raquo; SQNTL</div>
     </a>
     <a href="../info/index.html">
         <div class="side-btn"> &raquo; INFO</div>

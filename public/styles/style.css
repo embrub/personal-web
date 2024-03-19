@@ -75,15 +75,19 @@ body {
 /* used for main content block & previews in sqntl & artblog*/
 .container {
     display: flex;
-    /* width: 100%; */
     margin-top: 0px;
     margin: 0 auto;
+    /* width: 100%; */
 }
 
 h1 {
     font-size: 2.38em;
     background-color: var(--text);
     color: var(--backdrop-dark);
+}
+
+h2{
+    font-size: 1.45em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -379,13 +383,13 @@ blockquote {
     margin: 15px 10px 5px 15px;
 }
 
-.preview img {
+.preview img, .portrait img {
     width: 100%;
     margin: 0;
     border: 2.5px solid var(--backdrop-dark);
 }
 
-.preview a img:hover {
+.preview a img:hover, .portrait a img:hover {
     border: 2.5px solid var(--highlight-light);
     padding: none;
 }
@@ -502,6 +506,7 @@ a:hover {
     }
     .page-banners{
         width: max-content;
+        height: max-content;
         margin: 0 auto;
     }
     .gallery img{
