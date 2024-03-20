@@ -506,7 +506,7 @@ a:hover {
     }
     .page-banners{
         width: max-content;
-        height: max-content;
+        height: 100%;
         margin: 0 auto;
     }
     .gallery img{
