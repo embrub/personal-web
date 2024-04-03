@@ -180,6 +180,9 @@ blockquote {
     #topbar a{
         font-size: 1em;
     }
+    main {
+        padding: 15px;
+    }
 }
 
 /* SCROLL */
