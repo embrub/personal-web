@@ -149,6 +149,7 @@ iframe {
     display: flex;
     margin-top: 0px;
     margin: 5% 8%;
+    /* margin-right: 0; */
     max-width: 1235px;
     /* margin: 5% 10%;
     max-width: 1400px; */

@@ -4,7 +4,7 @@
 }
   
 @keyframes anim {
-    from {opacity: .8} 
+    from {opacity: .2} 
     to {opacity: 1}
 }
 

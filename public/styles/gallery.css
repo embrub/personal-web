@@ -46,7 +46,7 @@ img {
     /*formerly 49.5(?)*/
     /* width: calc(100% - 55vh); */
     /* width: 78.5%; */
-    width: 89%;
+    width: 88%;
     display: block;
     margin: 0 auto;
 }
@@ -114,7 +114,7 @@ a .btn:hover {
 #topbar {
     /* 1st=top/bottom, 2nd=left/right */
     padding: 12px 30px;
-    padding-left: 45%;
+    padding-left: 48%;
     /* text-align: center; */
     background-color: var(--blue);
     position: fixed;
@@ -181,7 +181,7 @@ blockquote {
         font-size: 1em;
     }
     main {
-        padding: 15px;
+        padding: 13px;
     }
 }
 
