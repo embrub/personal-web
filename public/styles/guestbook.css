@@ -4,6 +4,7 @@
 #HCB_comment_box #hcb_form #hcb_form_website,
 #HCB_comment_box #hcb_form #hcb_form_email {
     background-color: var(--backdrop);
+    color: var(--text);
     resize: vertical;
 }
 
@@ -39,7 +40,7 @@
 
 #HCB_comment_box input.submit:hover {
     background-color: var(--blue);
-    color: var(--highlight-dark);
+    color: var(--links);
     border: 1px solid var(--backdrop-dark);
 }
 
@@ -50,21 +51,17 @@
 }
 
 #HCB_comment_box .date {
-    color: var(--colorTertiary);
+    color: var(--text);
 }
-
-/* #HCB_comment_box .hcb-comment-tb {
-    text-align: center;
-} */
 
 #HCB_comment_box .comment .likes {
-    color: var(--highlight-dark);
+    color: var(--text);
 }
 
-/* #HCB_comment_box .hcb-link {
+#HCB_comment_box .hcb-link {
     color: var(--links);
     text-decoration: none;
-} */
+}
 
 #HCB_comment_box #hcb_form textarea,
 #HCB_comment_box #hcb_form #hcb_form_name,
@@ -75,6 +72,7 @@
 #HCB_comment_box .home-desc,
 #HCB_comment_box {
     font-family: monospace !important;
+    color: var(--text);
 }
 
 #HCB_comment_box input[type="file"] {
