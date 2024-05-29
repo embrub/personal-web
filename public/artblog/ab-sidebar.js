@@ -13,7 +13,8 @@ sb.innerHTML +=
                 &raquo; ARTBLOG
             </div>
             <nav aria-label="artblog-contents" class="dropdown-content">
-                <a href="../../artblog/2024/jan.html">&rsaquo; Jan-????</a>
+            <a href="../../artblog/2024/may.html">&rsaquo; May</a>
+            <a href="../../artblog/2024/jan.html">&rsaquo; Jan-Apr</a>
                 <a href=".././2023/oct-dec.html">&rsaquo; Oct-Dec</a>
                 <a href=".././2023/aug-sept.html">&rsaquo; Aug/Sept</a>
                 <a href=".././2023/june-july.html">&rsaquo; June/July</a>
@@ -24,7 +25,9 @@ sb.innerHTML +=
         </div>
     </a>
     <a href="../../journal/index.html">
-        <div class="side-btn"> &raquo; JOURNAL </div>
+        <div class="side-btn">
+                &raquo; JOURNAL
+        </div>
     </a>
     <a href="../../ocs/index.html">
         <div class="side-btn"> &raquo; OCs</div>

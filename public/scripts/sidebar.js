@@ -13,7 +13,8 @@ sb.innerHTML +=
                 &raquo; ARTBLOG
             </div>
             <nav aria-label="artblog-contents" class="dropdown-content">
-                <a href="../artblog/2024/jan.html">&rsaquo; Jan-????</a>
+                <a href="../artblog/2024/may.html">&rsaquo; May</a>
+                <a href="../artblog/2024/jan.html">&rsaquo; Jan-Apr</a>
                 <a href="../artblog/2023/oct-dec.html">&rsaquo; Oct-Dec</a>
                 <a href="../artblog/2023/aug-sept.html">&rsaquo; Aug/Sept</a>
                 <a href="../artblog/2023/june-july.html">&rsaquo; June/July</a>
@@ -81,52 +82,6 @@ toggle.addEventListener('click', () => {
     }
     localStorage.setItem('theme', theme);
 });
-
-//ALT VERS
-// const icon = document.querySelector('.icon');   
-// if (theme == 'system') {                  
-//   var prefersLightMode = window.matchMedia('(prefers-color-scheme: light)').matches; 
-//   if (prefersLightMode) {
-//     theme = 'light';
-//   } else {
-//     theme = 'dark';
-//   }
-//   console.log("Theme set to:",theme);
-// }
-
-// function setTheme(theme) {                  
-//   document.documentElement.dataset.theme = theme;
-
-//   // Update Icons/Emblems
-//   if (theme == 'light') {
-//     icon.src = 'images/icon.png';   
-//   } else {
-//     icon.src = 'images/icon2.png';   
-//   }
-// }
-
-// setTheme(theme);                      
-
-// toggle.addEventListener('click', () => {
-//   console.log("Toggling theme!");
-//   if (theme == 'light') {
-//     theme = 'dark';
-//   } else {
-//     theme = 'light';
-//   }
-//   localStorage.setItem('theme', theme);           
-//   setTheme(theme);                    
-// });
-
-//FIXES SIDEBAR WHEN WINDOW RESIZES
-// const media = window.matchMedia('(min-width: 690px)');
-// function stopHide(media) {
-//   while (media.matches) {
-//     document.getElementById("sidebar").style.display = 'inline-flex';
-//   }
-// }
-// stopHide(media);
-// media.addEventListener("resize",stopHide);
 
 //personal note: if this stops working again, turn "inline-flex" back to "flex" & stopHide("media") into a diff var
 //if it still doesnt well idfk does it look like i know what im doing

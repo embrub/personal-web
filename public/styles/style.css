@@ -16,7 +16,8 @@
     --highlight-light: #bc6a41;
     --highlight-dark: #A33B29;
 
-    --links: #5f6b6c;
+    --links: #5b6768;
+    /* --links: var(--highlight-dark); */
     --text: #100202;
 
     /* element-specific */
@@ -25,13 +26,13 @@
     --tltp-bckgrnd: var(--black);
     --tltp-text: var(--backdrop);
     --scroll: var(--black);
-    /* --journal: #7c75713a; */
+    --journal: #7c75713a;
 }
 
 [data-dark-mode]{ 
     /* general */
     --black: #222020;
-    --blue: #797D78;
+    --blue: #828882;
     --backdrop: #100d0d;
     --backdrop-dark: var(--black);
     --highlight-light: #b24657;
@@ -41,12 +42,12 @@
     --text: #828882;
 
     /* element-specific */
-    --topbar: var(--blue);
+    --topbar: var(--links);
     --grid: transparent;
     --tltp-bckgrnd: var(--backdrop);
     --tltp-text: var(--blue);
-    --scroll: var(--highlight-light);
-    /* --journal: #7c75713a; */
+    --scroll: var(--blue);
+    --journal: transparent;
 }
 
 html {
@@ -58,7 +59,7 @@ html {
     font-family: monospace;
     /* word-spacing: 1px;
     letter-spacing: 0.15px; */
-    font-size: 1.060em;
+    font-size: 1.062em;
 }
 
 body {
@@ -81,13 +82,14 @@ body {
 }
 
 h1 {
-    font-size: 2.38em;
+    font-size: 2em;
     background-color: var(--text);
+    font-weight: bolder;
     color: var(--backdrop-dark);
 }
 
-h2{
-    font-size: 1.45em;
+h2 {
+    font-size: 1.4em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -97,16 +99,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0.5em 0;
 }
 
-ul{
-    list-style-type: square;
-}
+ul { list-style-type: square; }
 
-ul > ul
-{
-    list-style-type: circle; 
-}
+ul > ul { list-style-type: circle; }
 
-summary, pre{
+ol li { padding: 5px 0px; }
+
+summary, pre {
     /* 1st=top, 2nd=right, 3rd=bottom, 4th=left */
     padding: 2.5px;
     padding-left: 14px;
@@ -129,7 +128,7 @@ hr.small {
 
 img {
     border-radius: 5px;
-    border: solid 1px var(--black);
+    /* border: solid 0.8px var(--black); */
 }
 
 .icon{
@@ -149,14 +148,13 @@ iframe {
     display: flex;
     margin-top: 0px;
     margin: 5% 8%;
-    /* margin-right: 0; */
-    max-width: 1235px;
-    /* margin: 5% 10%;
-    max-width: 1400px; */
+    max-width: 1245px;
+    /* margin: 5% 10%; */
+    /* max-width: 1400px; */
 }
 
 .highlight {
-    background-color: #817b6a5a;
+    background-color: var(--journal);
 }
 
 .highlight-2{
@@ -190,19 +188,19 @@ noscript{
     /* padding-right: 34.5vw; */
 }
 
-/* back 3 */
-.index{
-    padding-right: 27.5vw;
-}
-
-/* back 1 */
-.index-small{
-    padding-right: 34.5vw;
-}
-
 #topbar a:hover {
     color: var(--highlight-dark);
     font-style: oblique;
+}
+
+/* back 3 */
+.index {
+    padding-right: 25vw;
+}
+
+/* back 1 */
+.index-small {
+    padding-right: 32vw;
 }
 
 .buttons img{
@@ -221,7 +219,7 @@ noscript{
 
 /* SIDE MENU BAR */
 #sidebar {
-    top: 15%;    
+    top: 19%;
     position: sticky;
     order: 1;
     width: max-content;
@@ -230,13 +228,6 @@ noscript{
     flex-direction: column;
     display: inline-flex;
     flex-wrap: nowrap;
-}
-
-.sidecontainer {
-    margin-right: 20px;
-    padding: 5px;
-    padding-left: 0;
-    width: 22%;
 }
 
 #sidebar a {
@@ -259,28 +250,24 @@ aside a:link.top-btn {
     cursor: pointer;
     outline: none;
     border: none;
-    padding: 20px 12px;
+    padding: 25px 12px;
     font-size: 1.05em;
     border-radius: 5px;
     top: 88%;
-    margin-left: 45%;    
+    margin-left: 45%;   
+    margin: 0;
 }
 
 .side-btn {
     font-family: 'Abel', sans-serif;
     margin: 3.5px 0;
-    padding: 11px;
+    padding: 8px;
     background-color: var(--black);
+    border-radius: 30px 0 0 30px;
+    
     color: var(--blue);
     font-size: 1.06em;
     padding-left: 31.5px;
-}
-
-.side-btn.theme{
-    padding: 3.5px;
-    padding-left: 31.5px;
-    background-color: var(--blue);
-    color: var(--black);
 }
 
 .side-btn:hover,
@@ -289,6 +276,13 @@ aside a:link.top-btn {
     color: var(--highlight-dark);
     font-style: oblique;
     cursor: pointer;
+}
+
+.side-btn.theme{
+    padding: 3.5px;
+    padding-left: 31.5px;
+    background-color: var(--blue);
+    color: var(--black);
 }
 
 .burger {
@@ -308,6 +302,10 @@ aside a:link.top-btn {
     background-color: var(--highlight-light);
     z-index: 1;
 }
+
+/* .dropdown-content {
+    left: 29.5%;
+} */
 
 .dropdown-content a {
     font-family: sans-serif;
@@ -351,11 +349,15 @@ main {
 
 section {
     background-color: var(--backdrop-dark);
-    border: 2px solid var(--black);
-    border-radius: 20px;
+    /* border: 0.8px solid var(--black); */
+    /* border-radius: 10px 50px; */
     box-shadow: 0.55em 0.55em var(--text);
-    margin: 2.5em 0.5em;
-    padding: 1em 2.5em;
+    border-radius: 50px;
+    /* margin: 0 10px 10px; */
+    margin: 2em 1em;
+    padding: 2em 3em;
+    /* width: 49.25vw; */
+    /* max-width: 50vw; */
 }
 
 blockquote {
@@ -367,7 +369,8 @@ blockquote {
 }
 
 .page-banners {
-    width: 81.5vh;
+    /* width: 81.5vh; */
+    width: 86.5%;
     display: block;
     margin: 10px auto;
 }
@@ -380,7 +383,7 @@ blockquote {
     position: relative;
     justify-content: center;
     /* 1st=top, 2nd=right, 3rd=bottom, 4th=left */
-    margin: 15px 10px 5px 15px;
+    margin: 12px 5px 0 12px;
 }
 
 .preview img, .portrait img {
@@ -388,26 +391,25 @@ blockquote {
     margin: 0;
     border: 2.5px solid var(--backdrop-dark);
 }
-
+ 
 .preview a img:hover, .portrait a img:hover {
     border: 2.5px solid var(--highlight-light);
     padding: none;
 }
 
-@media only screen and (max-width : 550px) {
-    .blank{
-        display: none;
-        visibility: hidden;
-    }
-}
-
 /* for monthly entries page */
 
 .gallery img{
-    width: 29%;
+    width: 22.5%;
     height: 25vw;
-    margin: 4.5px;
+    margin: 0 0 10px 5px;
     object-fit: cover;
+}
+
+@media only screen and (max-width : 1000px) {
+    .gallery img {
+        width: 30%;
+    }
 }
 
 /* for the doodle page */
@@ -419,17 +421,11 @@ blockquote {
 
 /* for journal tab */
 .journal {
-    margin: 15px 0;
-    color: var(--text);
-    /* background-color: #7c75713a; */
-    background-color: #7c757137;
-    float: left;
-    padding: 5px 0;
-    border-style: solid none none none;
-    border-color: var(--text);
-    border-width: 7px;
-    max-width: 100%;
-    width: fit-content;
+    background-color: var(--journal);
+}
+
+.journal hr {
+    border: solid 3px var(--text);
 }
 
 section img{
@@ -469,7 +465,7 @@ a:active{
 }
 
 a:hover {
-    color: var(--highlight-dark);
+    color: var(--blue);
 }
 
 .checked{
@@ -497,9 +493,12 @@ a:hover {
         margin: 0;
         margin-top: 2.5em;
     }
+    section{
+        margin-left: 0;
+    }
     /* if you want to return the sidebar to the top of the screen, get rid of this */
     .maincontainer{
-        margin: 0 1.5%;
+        margin: 0 1%;
     }
     .scroll-updates{
         width: fit-content;
@@ -528,9 +527,6 @@ a:hover {
     iframe {
         width: 100%;
         height: 38vh;
-        /* margin: auto;
-        display: block;
-        border-radius: 5px; */
     }
     .top-btn{
         margin-left: -35px;
@@ -547,20 +543,28 @@ a:hover {
     }
 }
 
-@media only screen and (min-width: 501px){
+@media only screen and (min-width: 521px){
     #sidebar{
         display: inline-flex !important;
     }
 }
 
-@media only screen and (max-width : 500px) {
+@media only screen and (max-width : 520px) {
     #sidebar, 
     #sidebar img, 
     #sidebar p {
         display: none;
     }
+    #sidebar {
+        top: 15%;
+    }
     main{
         padding-left: 0;
+    }
+    .side-btn {
+        padding: 11px;
+        border-radius: 0;
+        font-size: medium;
     }
     .side-btn, .side-btn.theme{
         padding-left: 5px;
@@ -580,10 +584,8 @@ a:hover {
         display: none;
     }
     section {
-        border: 2px solid var(--black);
-        border-radius: 20px;
-        margin: 2.5em 1em;
-        padding: 0.5em 1.5em;
+        margin: 2em 0 0 0 ;
+        padding: 2em;
     }
     .maincontainer{
         margin: 0;
@@ -618,5 +620,8 @@ a:hover {
     } 
     .index-small{
         padding-right: 10vw;
+    }
+    ::-webkit-scrollbar-track, ::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+        display: none;
     }
 }

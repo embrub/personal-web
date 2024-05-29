@@ -1,0 +1,125 @@
+#HCB_comment_box textarea,
+#HCB_comment_box input.text,
+#HCB_comment_box #hcb_form #hcb_form_name,
+#HCB_comment_box #hcb_form #hcb_form_website,
+#HCB_comment_box #hcb_form #hcb_form_email {
+    background-color: var(--backdrop);
+    resize: vertical;
+}
+
+#HCB_comment_box .hcb-wrapper-half {
+    width: 50%;
+    float: left;
+}
+
+#HCB_comment_box .hcb-wrapper {
+    clear: both;
+}
+
+#HCB_comment_box input.text {
+    width: 95%;
+}
+
+#HCB_comment_box input.submit,
+#HCB_comment_box #hcb_form .btn,
+#HCB_comment_box #HCB_comment_form_box .btn {
+    border: 1px solid var(--links);
+    background-color: var(--black);
+    color: var(--links);
+    font-family: 'Abel', sans-serif;
+    font-size: 1.06em;
+    margin: 3.5px 0;    
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: max-content;
+    cursor: pointer;
+    padding-block: 8px;
+    border-radius: 30px;
+}
+
+#HCB_comment_box input.submit:hover {
+    background-color: var(--blue);
+    color: var(--highlight-dark);
+    border: 1px solid var(--backdrop-dark);
+}
+
+#HCB_comment_box div.comment {
+    border-bottom: var(--text);
+    margin-bottom: 8px;
+    padding: 8px 0;
+}
+
+#HCB_comment_box .date {
+    color: var(--colorTertiary);
+}
+
+/* #HCB_comment_box .hcb-comment-tb {
+    text-align: center;
+} */
+
+#HCB_comment_box .comment .likes {
+    color: var(--highlight-dark);
+}
+
+/* #HCB_comment_box .hcb-link {
+    color: var(--links);
+    text-decoration: none;
+} */
+
+#HCB_comment_box #hcb_form textarea,
+#HCB_comment_box #hcb_form #hcb_form_name,
+#HCB_comment_box #hcb_form #hcb_form_website,
+#HCB_comment_box #hcb_form #hcb_form_email,
+#HCB_comment_box #hcb_form .btn,
+#HCB_comment_box #HCB_comment_form_box .btn,
+#HCB_comment_box .home-desc,
+#HCB_comment_box {
+    font-family: monospace !important;
+}
+
+#HCB_comment_box input[type="file"] {
+    display: none;
+}
+
+#HCB_comment_box #hcb_form textarea,
+#HCB_comment_box #hcb_form #hcb_form_name,
+#HCB_comment_box #hcb_form #hcb_form_website,
+#HCB_comment_box #hcb_form #hcb_form_email {
+    text-transform: lowercase;
+    width: 95%;
+    font-size: 14px;
+    padding: 8px;
+    border: solid gray 1px;
+}
+
+#HCB_comment_box #hcb_form textarea {
+    width: 100%;
+}
+
+#HCB_comment_box .hcb-comment-tb button,
+#HCB_comment_box #hcb_form .home-desc a,
+#HCB_comment_box .home-desc a:visited {
+    color: var(--links) !important;
+    text-transform: lowercase;
+    padding: 8px;
+    border: none;
+}
+
+#HCB_comment_box h3 {
+    display: none;
+}
+
+#HCB_comment_box .home-desc {
+	font-size: 11px;
+    text-transform: lowercase;
+    /* display: none; */
+}
+
+@media only screen and (max-width : 790px) {
+    #HCB_comment_box #hcb_form #hcb_form_name,
+    #HCB_comment_box #hcb_form #hcb_form_website,
+    #HCB_comment_box #hcb_form #hcb_form_email {
+        font-family: monospace;
+        width: 93%;
+    }
+}
