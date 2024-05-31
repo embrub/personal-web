@@ -23,9 +23,7 @@
 
 #HCB_comment_box input.submit,
 #HCB_comment_box #hcb_form .btn,
-#HCB_comment_box #HCB_comment_form_box .btn,
-input#hcb_submit.submit.btn
-{
+#HCB_comment_box #HCB_comment_form_box .btn {
     border: 1px solid var(--links);
     background-color: var(--black);
     color: var(--links);
@@ -116,8 +114,12 @@ input#hcb_submit.submit.btn
 }
 
 #HCB_comment_box h3,
-.admin-link, 
-img.hcb-icon {
+.admin-link 
+{
+    display: none;
+}
+
+#HCB_comment_box>a {
     display: none;
 }
 
