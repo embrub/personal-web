@@ -21,9 +21,10 @@
     width: 95%;
 }
 
-#HCB_comment_box input.submit
-/* ,#HCB_comment_box #hcb_form .btn,
-#HCB_comment_box #HCB_comment_form_box .btn  */
+#HCB_comment_box input.submit,
+#HCB_comment_box #hcb_form .btn,
+#HCB_comment_box #HCB_comment_form_box .btn,
+#hcb_settings, a#hcb_settings
 {
     border: 1px solid var(--links);
     background-color: var(--black);
@@ -116,7 +117,8 @@
 }
 
 #HCB_comment_box h3,
-#admin-link {
+.admin-link, 
+img.hcb-icon {
     display: none;
 }
 
