@@ -24,7 +24,7 @@
 #HCB_comment_box input.submit,
 #HCB_comment_box #hcb_form .btn,
 #HCB_comment_box #HCB_comment_form_box .btn,
-#hcb_settings, a#hcb_settings
+input#hcb_submit.submit.btn
 {
     border: 1px solid var(--links);
     background-color: var(--black);
@@ -83,7 +83,7 @@
 #HCB_comment_box #HCB_comment_form_box .btn,
 #HCB_comment_box .home-desc,
 #HCB_comment_box,
-#hcb-settings {
+#hcb_settings, a#hcb_settings {
     font-family: monospace !important;
     color: var(--text);
 }
