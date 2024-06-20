@@ -36,17 +36,19 @@ body {
 }
 
 main {
-    max-width: 720px;
+    /* max-width: 740px;
     margin: auto;
-    margin-top: 25px;
-    padding: 20px;
+    margin-top: 40px; */
+
+    max-width: 740px;
+    margin: 42px auto;
 }
 
 img {
     /*formerly 49.5(?)*/
     /* width: calc(100% - 55vh); */
     /* width: 78.5%; */
-    width: 88%;
+    width: 87%;
     display: block;
     margin: 0 auto;
 }
@@ -113,7 +115,7 @@ a .btn:hover {
 /* TOP MENU BAR */
 #topbar {
     /* 1st=top/bottom, 2nd=left/right */
-    padding: 12px 30px;
+    padding: 10px 30px;
     padding-left: 48%;
     /* text-align: center; */
     background-color: var(--blue);
@@ -177,11 +179,11 @@ blockquote {
     img{
         width: 100%;
     }
-    #topbar a{
-        font-size: 1em;
-    }
     main {
-        padding: 13px;
+        margin: 40px 13px;
+    }
+    ::-webkit-scrollbar-track, ::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+        display: none;
     }
 }
 
