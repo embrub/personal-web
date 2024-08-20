@@ -1,15 +1,16 @@
-#testing
+#demos/testing
 template.html
-pre-button-style.css
+pre-may-style-edits.css
 pre-may-style.css
+aug-style.css
 buttons/
 alt.js
 pre-purge/
-selected.html
+oldhome.html
 
-#scrapped
-seeyour2.jpg
-seeyour1-final.jpg
+#temp hidden
+aug/
+aug.html
 
 #mac-specific
 .DS_Store

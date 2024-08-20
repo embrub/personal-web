@@ -1,3 +1,5 @@
+/* FINAL STYLE  */
+
 @font-face {
     font-family: 'Abel';
     font-style: normal;
@@ -9,7 +11,7 @@
 
 :root {
     /* general */
-    --black: #1d1b1b;
+    --black: #100202;
     --blue: #787d79;
     --backdrop: #e0d7d2;
     --backdrop-dark: #c0bbb5;
@@ -54,12 +56,12 @@ html {
     box-sizing: border-box;
     vertical-align: baseline;
     align-items: baseline;
-    max-width: fit-content;
+    max-width: fit-content;    
+    
+    font-family: sans-serif;
+    font-size: 1.07em;
+    font-weight: 300;
 
-    font-family: monospace;
-    /* word-spacing: 1px;
-    letter-spacing: 0.15px; */
-    font-size: 1.062em;
 }
 
 body {
@@ -93,9 +95,10 @@ h2 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /* font-family: Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Abel', 'Arial Narrow', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 500;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Abel', 'Arial Narrow', 'Lucida Sans', Arial, sans-serif; */
+    /* font-weight: 500; */
+    font-weight: 900;
     margin: 0.5em 0;
 }
 
@@ -147,8 +150,8 @@ iframe {
 .maincontainer {
     display: flex;
     margin-top: 0px;
-    margin: 5% 8%;
-    max-width: 1245px;
+    margin: 4% 10%;
+    max-width: 1410px;
     /* margin: 5% 10%; */
     /* max-width: 1400px; */
 }
@@ -183,9 +186,9 @@ noscript{
     font-family: 'Abel', sans-serif;
     color: var(--topbar);
     font-weight: 100;
-    font-size: 1.06em;
+    font-size: 1.08em;
     text-decoration: none;
-    /* padding-right: 34.5vw; */
+    padding: 0 0.3em;
 }
 
 #topbar a:hover {
@@ -194,13 +197,13 @@ noscript{
 }
 
 /* back 3 */
-.index {
-    padding-right: 25.5vw;
+#topbar a.index {
+    padding-right: 30.5vw;
 }
 
 /* back 1 */
-.index-small {
-    padding-right: 32vw;
+#topbar a.index-small {
+    padding-right: 38vw;
 }
 
 .buttons img{
@@ -232,7 +235,6 @@ noscript{
 
 #sidebar a {
     text-decoration: none;
-    color: var(--black);
 }
 
 aside a.top-btn,
@@ -266,7 +268,7 @@ aside a:link.top-btn {
     border-radius: 30px 0 0 30px;
     
     color: var(--blue);
-    font-size: 1.06em;
+    font-size: 1.1em;
     padding-left: 31.5px;
 }
 
@@ -303,11 +305,8 @@ aside a:link.top-btn {
     z-index: 1;
 }
 
-/* .dropdown-content {
-    left: 29.5%;
-} */
-
-.dropdown-content a {
+.dropdown nav a {
+    color: var(--black);
     font-family: sans-serif;
     font-weight: 120;
     padding-left: 45px;
@@ -321,7 +320,7 @@ aside a:link.top-btn {
 
 .dropdown-content a:hover {
     background-color: var(--blue);
-    color: var(--text);
+    color: var(--black);
 }
 
 .dropdown:hover .dropdown-content {
@@ -355,7 +354,7 @@ section {
     border-radius: 50px;
     /* margin: 0 10px 10px; */
     margin: 2em 1em;
-    padding: 2em 3em;
+    padding: 2em 3.5em;
     /* width: 49.25vw; */
     /* max-width: 50vw; */
 }
@@ -404,12 +403,6 @@ blockquote {
     height: 25vw;
     margin: 0 0 10px 5px;
     object-fit: cover;
-}
-
-@media only screen and (max-width : 1000px) {
-    .gallery img {
-        width: 30%;
-    }
 }
 
 /* for the doodle page */
@@ -476,9 +469,17 @@ a:hover {
     background: var(--highlight-light);
 }
 
-@media only screen and (max-width : 790px) {
+
+@media only screen and (max-width : 1000px) {
+    .gallery img {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width : 850px) {
     .icon{
-        width: 140px;
+        width: 170px;
+        display: block;
     }
     .sidecontainer {
         padding: 0;
@@ -538,18 +539,18 @@ a:hover {
     html{
         font-size: normal;
     }
-    .index{
+    #topbar a.index{
         padding-right: 18vw;
     }
 }
 
-@media only screen and (min-width: 521px){
+@media only screen and (min-width: 600px){
     #sidebar{
         display: inline-flex !important;
     }
 }
 
-@media only screen and (max-width : 520px) {
+@media only screen and (max-width : 600px) {
     #sidebar, 
     #sidebar img, 
     #sidebar p {
@@ -615,10 +616,10 @@ a:hover {
     .preview {
         margin: 25px 5px;
     }
-    .index{
+    #topbar a.index{
         padding-right: 4.5vw;
     } 
-    .index-small{
+    #topbar a.index-small{
         padding-right: 10vw;
     }
     ::-webkit-scrollbar-track, ::-webkit-scrollbar, ::-webkit-scrollbar-thumb {

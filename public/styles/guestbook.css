@@ -81,7 +81,7 @@
 #HCB_comment_box #HCB_comment_form_box .btn,
 #HCB_comment_box .home-desc,
 #HCB_comment_box {
-    font-family: monospace !important;
+    font-family: sans-serif !important;
     color: var(--text);
 }
 
@@ -133,7 +133,7 @@
     #HCB_comment_box #hcb_form #hcb_form_name,
     #HCB_comment_box #hcb_form #hcb_form_website,
     #HCB_comment_box #hcb_form #hcb_form_email {
-        font-family: monospace;
+        font-family: sans-serif;
         width: 93%;
     }
 }

@@ -40,15 +40,16 @@ main {
     margin: auto;
     margin-top: 40px; */
 
-    max-width: 740px;
+    /* max-width: 740px; */
+    max-width: 800px;
     margin: 42px auto;
 }
 
 img {
     /*formerly 49.5(?)*/
     /* width: calc(100% - 55vh); */
-    /* width: 78.5%; */
-    width: 87%;
+    /* width: 87%; */
+    width: 80%;
     display: block;
     margin: 0 auto;
 }

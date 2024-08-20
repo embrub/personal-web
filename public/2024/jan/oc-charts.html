@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERMM... | ARTBLOG</title>
+  <link rel="stylesheet" href="../../styles/carousel.css">
+  <link rel="stylesheet" href="../../styles/gallery.css">
+  <link rel="icon" type="image/x-icon" href="../../images/favicon.png">
+</head>
+
+<body>
+  <div id="topbar">
+    <a href="javascript:javascript:history.go(-1)" class="direct">&lsaquo; BACK</a>
+  </div>
+  <main>
+    <p>OG template by @hazmatEN on twt</p>
+    <div class="carousel-container">
+      <div class="slides anim">
+        <a href="images/occhart-gio.png"><img src="images/occhart-gio.png" alt="digital art of giomi in shades of deep blues and bright cyans. to the right of her are a few filled out charts and bullet points, listing out stats and quirks."></a>
+      </div>
+      <div class="slides anim">
+        <a href="images/occhart-otis.png"><img src="images/occhart-otis.png" alt="portrait of otis in muted violets and magentas, accompanied by miscalaneous writings. the art is decorated by a scribbly black mist."></a>
+      </div>
+      <div class="slides anim">
+        <a href="images/occhart-enzo.png"><img src="images/occhart-enzo.png" alt="portrait of enzo, drawn in bright purplish blues and oranges. it's drawn messily and outlined in bold, dark lineart. to the side are miscaleneous writings."></a>
+      </div>
+      <div class="slides anim">
+        <a href="images/occhart-amias.png"><img src="images/occhart-amias.png" alt="monochromatic digital art of amias, done in a messy, scribbly style. to the side are miscaleneous writings."></a>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="bullet" onclick="currentSlide(1)"></span>
+      <span class="bullet" onclick="currentSlide(2)"></span>
+      <span class="bullet" onclick="currentSlide(3)"></span>
+      <span class="bullet" onclick="currentSlide(4)"></span>
+    </div>
+    <h2>filled oc charts w the PTC cast^-^</h2>
+    <h3>creation date: jan 19</h3>
+    <hr><br>
+
+    <h4>characters featured (in order): giomi, otis, enzo, amias</h4>
+    <p>aw helllll naw, not the w3schools carousel [lighthearted]</p>
+    <p>these charts were making their rounds on twitter, at least in the communities i was in, and so i just had to fill 
+      em out too with the PTC main cast^^ just,,,, not on twt.</p>
+    <p>i did these pretty quickly, intending for them to be doodles, but alas, they have entered a semi-rendered, 
+      semi-sketch state. messy as it is, i really like how these came out, especially the 3rd one. i tried to do v thick, 
+      dark lineart first and then did flats on top of them in same layer, redoing when neccessary.</p>
+    <p>i really hope i'll remember how to do this coloring style later down the line, something just hits a lil different 
+      with these idk. once again looking at enzo's portrait aegehehegee im so predictable.</p>
+  </main>
+  <script>
+    if (localStorage.getItem('theme') == 'dark') {
+      document.querySelector('html').toggleAttribute('data-dark-mode');
+    }
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("slides anim");
+      let bullets = document.getElementsByClassName("bullet");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < bullets.length; i++) {
+        bullets[i].className = bullets[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      bullets[slideIndex - 1].className += " active";
+    }
+  </script>
+</body>
+
+</html>

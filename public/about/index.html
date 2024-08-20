@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>INFO</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <style>
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 16vw;
+            height: auto;
+            background-color: var(--tltp-bckgrnd);
+            color: var(--tltp-text);
+            padding: 8px 28px 10px 28px;
+            top: 45%;
+            left: 5%;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        @media only screen and (max-width : 800px) {
+            .preview.tooltip img {
+                width: 100%;
+                justify-content: center;
+                margin: 0;
+            }
+
+            .tooltip .tooltiptext {
+                width: 30vw;
+                top: 60%;
+                left: -35%;
+            }
+        }
+
+        @media only screen and (max-width : 565px) {
+            .tooltip .tooltiptext {
+                width: 85%;
+                top: 45%;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<div id="topbar">
+    <button type="button" onclick="responsive()" aria-label="menu" class="burger"
+        style="display: inline;">&#9776;</button>
+    <a href="../index.html">&loz; SĀCHER</a>
+</div>
+
+<body>
+    <div class="maincontainer">
+        <div class="sidecontainer">
+            <nav id="sidebar">
+                <noscript style="width: 170px">
+                    <a href="../index.html">HOME</a> |
+                    <a href="../info/index.html#">SITEMAP</a>
+                    <p>site relies on javascript to load the full sidebar & navigate through gallery pages.</p>
+                    <p>enable js for a more complete experience :,D</p>
+                </noscript>
+            </nav>
+        </div>
+        <!-- main content -->
+        <main>
+            <section>
+                <h1 id="top">&loz;ABOUT</h1>
+                <p aria-label="contents">
+                    contents: [
+                    <a href="#nav">sitemap</a> |
+                    <a href="#neo">abt the site</a> |
+                    <a href="#me">abt me</a> |
+                    <a href="#updates">updates</a> |
+                    <a href="#mylinks">links</a> |
+                    <a href="#art">art tools</a>
+                    <!-- <a href="#mascots">mascots</a> -->
+                    ]
+                </p>
+                <br>
+                <img src="images/banner1.png" class="page-banners" alt="">
+                <br>
+                <h2 id="nav">Sitemap</h2>
+                <p><a href="../index.html">home</a></p>
+                <ul>
+                    <li><a href="../index.html">artblog</a></li>
+                    <ul>
+                        <li><a href="../2024/may.html">may-july</a></li>
+                        <li><a href="../2024/jan.html">jan-apr</a></li>
+                        <li><a href="../2023/oct-dec.html">oct-dec</a></li>
+                        <ul>
+                            <li><a href="../2023/inktober.html">inktober</a></li>
+                        </ul>
+                        <li><a href="../2023/aug-sept.html">aug-sept</a></li>
+                        <li><a href="../2023/june-july.html">june-july</a></li>
+                        <li><a href="../2023/apr-may.html">apr-may</a></li>
+                        <li><a href="../2023/traditional.html">traditional</a></li>
+                        <li><a href="../2023/doodles.html">doodles</a></li>
+                    </ul>
+                    <li><a href="../journal/index.html">journal</a></li>
+                    <ul>
+                        <li><a href="../journal/2.html">pg2</a></li>
+                    </ul>
+                    <li><a href="../ocs/index.html">OCs</a></li>
+                    <li><a href="../favorites/index.html">favorites</a></li>
+                    <li><a href="../info/index.html">info</a> (you are here)</li>
+                    <li><a href="../guestbook.html">guestbook</a></li>
+                    <li id="neo"><a href="../not_found.html">not found</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>About the site/why neocities?</h2>
+                <p>like many other neocities netizens, there was a disconnect felt with social media, and i no longer wanted to post
+                    my stuffs. yet i still wanted a place to myself where i could chronologically archive my
+                    digital art. and so, this website was made- a hopefully more hands-on and engaging approach to
+                    explore my hobbies & tangential thoughts w/o relying on 3rd party sites. every month/two months
+                    updates with a new batch of artwork i've made in that time. cool.</p>
+                </p>
+                <p>this site is by no means a portfolio - i post all, and i mean ALL of the art i've made in 
+                    that month. polished art will be undoubtedly overwhelmed by colorful doodles. consider 
+                    this place more of an informal blog than an art showcase. for a more curated experience, you can 
+                    visit the <a href="../selected.html">selected works</a> page.
+                </p>
+                <!-- <details>
+                    <summary>IMPORTANT NOTICE: </summary>
+                <p><strong>javascript is used to load in the sidebar, to hide/unhide elements on the 
+                    mobile layout, and for the "back" buttons in the artblog galleries.</strong> if there is no sidebar after 
+                    clicking to another page, or some buttons aren't working, pls make sure that js is enabled ;o;</p>
+                </details> -->
+                <hr>
+
+            <h2 id="me">Abt me</h2>
+            <p>ember sācher's my penname. inout of consciousness since
+                '03, and a hobbyist OC artist & wannabe comic creator on the sidelines. strictly of the
+                self-indulgent variety. i have a fondness for marine & space-inspired charaacters, themes of cycles and
+                endings, and polite men and insane women!</p>
+            <p>you may peek at inspos, in the "<a href="favorites.html">favorites</a>" tab & find site
+                updates on <a href="https://neocities.org/site/sachersketchbook">the site profile :)</a></p>
+            <img src="images/page-banner1.jpeg" class="page-banners" alt="">
+            <h3>Trivia?!??!?!??!</h3>
+            <details>
+                <summary>where does the name "ember sācher" come from, anyhow? (a ramble on pronounciations and
+                    inspirations)</summary>
+                <p>fun trivia if anyone rly wants to know--!</p>
+                <p>my penname is inspired by the band, “alice schach and the magic orchestra!” i rather impulsively
+                    decided i wanted to pay tribute to them somehow :} thus became <i>schach —> sācher</i> overtime.
+                    normally, "sacher" is not meant to have the hard ā over it, but i had the inclanation to
+                    pronounce
+                    it like "say-sure." germans may feel free to beat me to death
+                </p>
+            </details>
+            <br>
+            <details>
+                <summary>media interests????</summary>
+                <p>what media occupies my mind when im not doing.. this *-*</p>
+                <ul>
+                    <li>metal gear franchise</li>
+                    <li>dungeon meshi</li>
+                    <li>QUALIA AUTOMATA!!!!!! & to hell and back !!!</li>
+                    <li>QSMP (main POVs: philza & fitMC)</li>
+                    <li>cruelty squad</li>
+                </ul>
+            </details>
+        </section>
+
+        <section>
+        <h2 id="updates">site updates</h2>
+        <div class="scroll-updates">
+            <p><strong>aug 20 '24</strong> &ndash; site restructuring + some visual changes. this 
+                season's <a href="2024/may.html">artfight entries</a> have also been uploaded.</p>
+            <p><strong>jun 21 '24</strong> &ndash; <a href="2024/may.html">new slop</a> in the may
+                artblog.</p>
+            <p><strong>may 29 '24</strong> &ndash; <a href="2024/may.html">may</a> artblog up! <a
+                    href="#HCB_comment_box">guestbook</a> also added to homepage</p>
+            <p><strong>apr 17 '24</strong> &ndash; 2 arts posted in <a href="2024/jan.html">jan</a> page
+            </p>
+            <p><strong>mar 19 '24</strong> &ndash; <a href="ocs/index.html">OCs page up!</a> some new <a
+                    href="journal/index.html">journal entries</a> also.</p>
+            <p><strong>mar 11 '24</strong> &ndash; doodle dump posted in <a href="2024/jan.html">jan</a>
+                page, <a href="index.html">artblog</a> landing page is entirely reformatted, new buttons
+                and 'abt the art' blurb posted in <a href="info/index.html">info</a> page, one new <a
+                    href="journal/index.html">journal</a> entry, AND new nav links in the topbar for monthly
+                galleries :D</p>
+            <p><strong>mar 2 '24</strong> &ndash; 2 new arts in <a href="2024/jan.html">jan</a> artblog.
+            </p>
+            <p><strong>feb 10 '24</strong> &ndash; <a href="2024/jan.html">jan</a> artblog up &
+                <a href="favorites/index.html">favorites</a> page update & some <a href="journal/">journal</a>
+                entries
+            </p>
+            <p><strong>dec 23 '23</strong> &ndash; <a href="2023/oct-dec.html">oct-dec</a> artblog and
+                accompanying <a href="2023/inktober.html">inktober page</a> added</p>
+            <p><strong>dec 16 '23</strong> &ndash; busy few weeks! dark mode implemented, <a
+                    href="favorites/index.html">favorites</a>
+                page added, new <a href="info/index.html">info</a> page blurbs.</p>
+            <p><strong>nov 3 '23</strong> &ndash; misc backend and css edits + compressed apr-may, june-july,
+                and doodles' images</p>
+            <p><strong>oct 16 '23</strong> &ndash; new layout edits. hope u like sans-serif</p>
+            <p><strong>oct 14 '23</strong> &ndash; <a href="2023/aug-sept.html">aug-sept</a> artblog up!
+                also I DID IT, I FUCKING DID IT. I FIXED THE SHITASS BUG THAT CAUSED THE TOPBAR ELEMENTS TO
+                SHIFT AROUND ON SAFARI AND <b>ONLY SAFARI </b>FOR SOME REASON. IT'S ALWAYS SAFARI MAN, SO
+                ANNOYING RAAAAGHHHHHH. </p>
+            <p><strong>oct 11 '23</strong> &ndash; <a href="journal/index.html">journal entry batch</a></p>
+            <p><strong>sep 8 '23</strong> &ndash; more organization, cleaned up a lotta the code on the monthly
+                pages</p>
+            <p><strong>aug 23 '23</strong> &ndash; minor code edits. hopefully the artblog page is more
+                accomodating
+                for larger monitors now?</p>
+            <p><strong>aug 1 '23</strong> &ndash; 1 (one) <a href="journal/index.html">journal entry</a> up, and
+                rearranged the layout of the "<a href="info/index.html">info</a>" page. also some misc css
+                edits.</p>
+            <p><strong>july 28 '23</strong> &ndash; <a href="2023/june-july.html">june-july</a> artblog
+                up!</p>
+            <p><strong>july 25 '23</strong> &ndash; fixed some issues w iframe clipping into other stuffs</p>
+            <p><strong>july 8 '23</strong> &ndash; FIXED A BUG THAT CAUSED A LOTTA CLIPPING VISUALS ON MOBILE.
+                THE SITE'S <em>COMPLETELY</em> MOBILE-FRIENDLY FR NOW. (FOR THE 3RD TIME LOL)</p>
+            <p><strong>july 6 '23</strong> &ndash; completely new layout & mobile-responsiveness ! also added <a
+                    href="2023/doodles.html">school doodles</a>, <a
+                    href="2023/traditional.html">traditional
+                    art</a>, and <a href="journal/index.html">journal</a> pages</p>
+            <p><strong>june 18 '23</strong> &ndash; cleaned up code + reformatted <a
+                    href="2023/index.html">artblog</a>, <a href="sequential/index.html">squential</a>,
+                and <a href="2023/apr-may.html">apr/may</a> pages</p>
+            <p><strong>june 13 '23</strong> &ndash; created these changelogs + basic mobile-responsiveness ?</p>
+            <p><strong>june 4 '23</strong> &ndash; site created, all pages up !</p>
+        </div>
+        <br id="mylinks">
+    </section>
+
+            <section>
+                <h2>my links</h2>
+                <ul>
+                    <li>if you spot any technical issues with the site or would just like to
+                        get in contact, you can message me on <strong>discord</strong> --
+                        @<strong>embrrrr</strong> [REMEMBER: it's **FOUR**
+                        R's, people have slipped on that &#128557;]</li>
+                    <li>my <strong>neocities</strong> <a href="https://neocities.org/site/sachersketchbook">site
+                            profile</a></li>
+                    <li>my <strong>artfight</strong> acc as <a href="https://artfight.net/~embrsacher">~embrsacher</a>, but
+                        that's about it.</li>
+                    <li>if you want to leave a message directly on the site, see <a href="contact.html">this page</a>
+                        for the public guestbook</a>!</li>
+                </ul>
+                <hr>
+
+                <h3>my button: *-*</h3>
+                <div class="buttons">
+                    <a href="../images/sacher1.jpeg" target="_blank"><img src="../images/sacher1.jpeg" loading="lazy"
+                            alt="sacher"></a>
+                    <a href="../images/sacher2.jpeg" target="_blank"><img src="../images/sacher2.jpeg" loading="lazy"
+                            alt="sacher"></a>
+
+                </div>
+                <hr>
+                <h2 id="sites">personal site directory</h2>
+                <p>sites that i enjoy! whether that be for their artwork or for their words. a select few of these
+                    sites vaguely inspired my own as well :D</p>
+                <div class="buttons">
+                    <a href="https://twelvemen.neocities.org" target="_blank">
+                        <img src="site-btns/12men.gif" loading="lazy" alt="12men"></a>
+
+                    <a href="https://www.bikobatanari.art" target="_blank">
+                        <img src="site-btns/bikobatanari.png" loading="lazy" alt="bikobatanari"></a>
+
+                    <a href="https://debtdeath.neocities.org" target="_blank">
+                        <img src="site-btns/debtdeath.png" loading="lazy" alt="debtdeath"></a>
+
+                    <a href="https://frills.dev" target="_blank">
+                        <img src="site-btns/frills.png" loading="lazy" alt="frills"></a>
+
+                    <a href="https://princss.online" target="_blank">
+                        <img src="site-btns/princss.png" loading="lazy" alt="princss"></a>
+
+                    <a href="https://iwillneverbehappy.neocities.org" target="_blank">
+                        <img src="site-btns/iwnbh2.gif" loading="lazy" alt="iwillneverbehappy"></a>
+
+                    <a href="https://herbicidally.neocities.org" target="_blank">
+                        <img src="site-btns/herbicidally.gif" loading="lazy" alt="herbicidally"></a>
+
+                    <a href="https://cometpustoj.neocities.org" target="_blank">
+                        <img src="site-btns/cometpustoji.gif" loading="lazy" alt="cometpustoj"></a>
+
+                    <a href="https://pleurodelinae.neocities.org" target="_blank">
+                        <img src="site-btns/pleurodelinae.png" loading="lazy" alt="pleurodelinae"></a>
+
+                    <a href="https://m0r1bund.com" target="_blank">
+                        <img src="site-btns/moribund.png" loading="lazy" alt="m0r1bund"></a>
+
+                    <a href="https://mariglds.cafe" target="_blank">
+                        <img src="site-btns/mariglds.png" loading="lazy" alt="mariglds"></a>
+
+                    <a href="https://nenrikido.neocities.org" target="_blank">
+                        <img src="site-btns/nenrikido.gif" loading="lazy" alt="nenrikido"></a>
+
+                    <a href="http://matikhluk.neocities.org" target="_blank">
+                        <img src="site-btns/matikhluk.png" loading="lazy" alt="matikhluk"></a>
+
+                    <a href="https://solaria.neocities.org" target="_blank">
+                        <img src="site-btns/solaria.png" loading="lazy" alt="solaria"></a>
+
+                    <a href="https://wasongo.art" target="_blank">
+                        <img src="site-btns/wasongo.gif" loading="lazy" alt="wasongo"></a>
+
+                    <a href="https://webcatz.neocities.org" target="_blank">
+                        <img src="site-btns/webcatz.gif" loading="lazy" alt="webcatz"></a>
+
+                    <a href="https://lostpages.neocities.org" target="_blank">
+                        <img src="site-btns/lostpages.png" loading="lazy" alt="lost pages"></a>
+
+                    <a href="https://riversideee.neocities.org" target="_blank">
+                        <img src="site-btns/riversideee2.gif" loading="lazy" alt="riversideee"></a>
+
+                    <a href="https://projectc190.neocities.org" target="_blank">
+                        <img src="site-btns/projectc190.gif" loading="lazy" alt="project c190"></a>
+
+                    <a href="https://jacsknife.neocities.org" target="_blank">
+                        <img src="site-btns/jacsknifebutton.jpg" loading="lazy" alt="jacsknife"></a>
+
+                    <a href="https://groundedwren.neocities.org/" target="_blank">
+                        <img src="site-btns/groundedwren.png" loading="lazy" alt="groundedwren"></a>
+                    <a href="https://phantasmagorial.neocities.org" target="_blank">
+                        <img src="site-btns/phantasmagorial.png" loading="lazy" alt="phantasmagorial"></a>
+
+                    <a href="https://mercurialan999el.neocities.org" target="_blank">
+                        <img src="site-btns/mercurialan999el7.gif" loading="lazy" alt="mercurialan999el"></a>
+
+                    <a href="https://abyssbloom.neocities.org/#" target="_blank">
+                        <img src="site-btns/abyssbloom.gif.png" loading="lazy" alt="abyssbloom"></a>
+
+                    <a href="https://neocities.org/site/versegm" target="_blank">
+                        <img src="site-btns/versegm.png" loading="lazy" alt="versegm"></a>
+
+                    <a href="https://leusyth.neocities.org/#" target="_blank">
+                        <img src="site-btns/leusyth.png" loading="lazy" alt="leusyth"></a>
+
+                    <a href="https://sammylux.neocities.org" target="_blank">
+                        <img src="site-btns/sammylux.gif" loading="lazy" alt="leusyth"></a>
+
+                    <a href="https://koilsdatter.neocities.org" target="_blank">
+                        <img src="site-btns/koil2.png" loading="lazy" alt="koilsdatter"></a>
+
+                    <a href="https://murid.neocities.org" target="_blank">
+                        <img src="site-btns/ocontent.gif" loading="lazy" alt="occasionally content"></a>
+
+                    <a href="https://melankorin.net" target="_blank">
+                        <img src="site-btns/melankorin.gif" loading="lazy" alt="melankorin"></a>
+
+                    <a href="https://menmy.neocities.org" target="_blank">
+                        <img src="site-btns/ghostgirl_mine.gif" loading="lazy" alt="ghostgirl"></a>
+                    <a href="https://leviathren.neocities.org" target="_blank">
+                        <img src="site-btns/leviathren.gif" loading="lazy" alt="leviathren"></a>
+
+                    <a href="https://nyanseong.neocities.org" target="_blank">
+                        <img src="site-btns/nyanseong-wink.png" loading="lazy" alt="nyanseong"></a>
+
+                    <a href="https://crotovane.neocities.org" target="_blank">
+                        <img src="site-btns/crotovane.gif" loading="lazy" alt="crotovane"></a>
+
+                    <a href="https://mn1ca.neocities.org" target="_blank">
+                        <img src="site-btns/mn1ca.gif" loading="lazy" alt="mn1ca"></a>
+
+                    <a href="https://kayleerowena.com" target="_blank">
+                        <img src="site-btns/krowena.png" loading="lazy" alt="kaylee roweena"></a>
+                </div>
+                <h4>site recs that don't have a button:</h4>
+                <ul>
+                    <li><span class="highlight-2">junebugjamboree</span> &ndash; artist with a distinct sharp and
+                        shapely, but simple style. also hosts the webcomic, 'watch as i perform my own tracheotomy.'
+                        which i found rly gripping, so feel free to take a looksee wink wink. [ <a
+                            href="https://junebugjamboree.neocities.org/" target="_blank">link</a> ]</li>
+                    <li><span class="highlight-2">rakoerose</span> &ndash; a blog with writing that oozes
+                        with
+                        personality, accompanied by fun and cozy site design. soon to host artworks and photography, so
+                        be sure to stick around for the ride^^ [ <a href="https://rakoerose.neocities.org"
+                            target="_blank">link</a> ]
+                    </li>
+                </ul>
+
+                
+                <!-- container end -->
+            </section>
+
+            <section>
+                <h2 id="art">what program do i use for art?</h2>
+                <p><span class="highlight">for my digital art, i use ibispaint to draw.</span>
+                    im still looking for a brush that perfectly replicates the mspaint marker,
+                    PLEASE if anyone has a QR code for one, CONTACT ME PLEAAASEEE
+                </p>
+                <h3>a list of my tools and brushes:</h3>
+                <p>(ibis only)</p>
+                <details>
+                    <summary>lineart</summary>
+                    <br>
+                    <a href="images/lineart2.jpg" target="_blank"><img src="images/lineart2.jpg" loading="lazy"></a>
+                    <a href="images/lineart-brushes.jpeg" target="_blank"><img src="images/lineart-brushes.jpeg"
+                            loading="lazy"></a>
+                    <p>as for sketching, i use the default 'ruling pen' brush on 30% opacity. all of the memes in
+                        <a href="../2023/june-july/ptc-memes.html">this post</a> were done w this method.
+                    </p>
+                </details>
+                <br>
+                <details>
+                    <summary>rendering</summary>
+                    <br>
+                    <a href="images/rendering-brushes.png" target="_blank"><img src="images/rendering-brushes.png"
+                            loading="lazy"></a>
+                    <p>OH AND THE LASSO TOOL !!! DONT FORGET ABT THE LASSO TOOL THAT SHITS ESSENTIAL.</p>
+                    <p>these brushes are ASS for blending, so don't grab them if that's what you want. consider them
+                        dry brushes that come with minor color variation. color-picking the variants and slow
+                        layering is mainly how i go about rendering with these things. but hey who am i to police.
+                    </p>
+                    <p>for gradients, soft shading, and the like, i have a modified 'pen (fade)' brush.
+                    </p>
+                    <a href="images/rendering-brushes.png" target="_blank"><img src="images/rendering-brushes2.png"
+                            loading="lazy"></a>
+                </details>
+            </section>
+
+            <section>
+                <h2 id="mascots">who r the silly fellas in the sidebar?</h2>
+                <p><span class="highlight">the ocs that inspired the look of the site :D</span></p>
+                <div class="container">
+                    <div class="preview tooltip">
+                        <!-- <h3>giomi - light mode rep !</h3> -->
+                        <img src="images/giomi-cheeb.png"
+                            alt="chibi flat-color of a preppy blue-haired girl in semi-formal attire, and wearing a big black hat.">
+                        <span class="tooltiptext">
+                            <p>GIOMI !! light mode mascot & also the the protagonist to PTC. living doll archivist lady
+                                in search of her missing memories. a sweetheart, really.</p>
+                        </span>
+                    </div>
+                    <div class="preview tooltip">
+                        <!-- <h3>anton - dark mode rep !</h3> -->
+                        <img src="images/anton-cheeb.png"
+                            alt="chibi flat-color of a boy in gray and black semi-formal attire. half his scruffy brown hair is dyed gray. his red eyes are downturned and he wears a scowl.">
+                        <span class="tooltiptext">
+                            <p>anton! dark mode mascot and misc minor antagonist. put his heart inside a robot so he
+                                could run his company even after death.
+                            </p>
+                            <!-- <p>the thigh-highs are a power-move, he walks into HQ every day 
+                                breaking dress code.</p> -->
+                        </span>
+                    </div>
+                </div>
+                <hr>
+                <p>will add more to the info page when i think of it.</p>
+            </section>
+            <footer>
+                <p>&ensp; ember sācher 2023 | hosted by neocities</p>
+            </footer>
+        </main>
+        <aside>
+            <a href="site.html#" class="top-btn">&#8593;</a>
+        </aside>
+    </div>
+    <script src="../scripts/sidebar.js"></script>
+</body>
+
+</html>
