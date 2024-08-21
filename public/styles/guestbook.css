@@ -8,6 +8,21 @@
     resize: vertical;
 }
 
+#hcb_form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center
+}
+
+#hcb_form_name, #hcb_form_website {
+    width: 50%
+}
+
+#HCB_comment_box .hcb-wrapper {
+    flex: 1 0 100%
+}
+
 #HCB_comment_box a {
     color: var(--links);
 }
@@ -15,24 +30,25 @@
 #HCB_comment_box .hcb-wrapper-half.input-field {
     width: 50%;
     float: left;
-    clear: none;
+}
+
+#HCB_comment_box .hcb-wrapper {
+    clear: both;
 }
 
 #HCB_comment_box input.text {
     width: 95%;
 }
 
-p#hcb-comment-tb {
+.hcb-comment-tb a {
     color: var(--links);
 }
 
-#HCB_comment_box input.submit,
-#HCB_comment_box #hcb_form .btn,
-#HCB_comment_box #HCB_comment_form_box .btn {
+input#hcb_submit {
     border: 1px solid var(--links);
-    background-color: var(--black);
-    color: var(--links);
-    font-family: 'Abel', sans-serif;
+    background-color: var(--black) !important;
+    color: var(--links) !important;
+    font-family: 'Abel', sans-serif !important;
     font-size: 1.06em;
     margin: 3.5px 0;
     text-transform: uppercase;
@@ -42,8 +58,9 @@ p#hcb-comment-tb {
     border-radius: 30px;
 }
 
-#HCB_comment_box input.submit:hover {
-    background-color: var(--blue);
+
+#hcb_submit:hover {
+    background-color: var(--blue) !important;
     color: var(--links);
     border: 1px solid var(--backdrop-dark);
 }
@@ -90,7 +107,8 @@ p#hcb-comment-tb {
     color: var(--text);
 }
 
-#HCB_comment_box input[type="file"] {
+label#hcb_file_label a.btn-secondary,
+#HCB_comment_box > h3, .admin-link, div.home-desc, .home-desc {
     display: none;
 }
 
@@ -119,8 +137,7 @@ p#hcb-comment-tb {
 }
 
 #HCB_comment_box h3,
-.admin-link 
-{
+.admin-link {
     display: none;
 }
 
