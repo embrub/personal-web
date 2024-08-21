@@ -15,12 +15,15 @@
     align-items: center
 }
 
-#hcb_form_name, #hcb_form_website {
-    width: 50%
+#HCB_comment_box #hcb_form textarea,
+#HCB_comment_box #hcb_form #hcb_form_name,  #HCB_comment_box  #hcb_form_website{
+    width: 50%;
+    float: left;
 }
 
 #HCB_comment_box .hcb-wrapper {
-    flex: 1 0 100%
+    /* flex: 1 0 100% */
+    clear: both;
 }
 
 #HCB_comment_box a {
@@ -30,10 +33,6 @@
 #HCB_comment_box .hcb-wrapper-half.input-field {
     width: 50%;
     float: left;
-}
-
-#HCB_comment_box .hcb-wrapper {
-    clear: both;
 }
 
 #HCB_comment_box input.text {
