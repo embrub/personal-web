@@ -8,17 +8,22 @@
     resize: vertical;
 }
 
-#HCB_comment_box .hcb-wrapper-half {
-    width: 50%;
-    float: left;
+#HCB_comment_box a {
+    color: var(--links);
 }
 
-#HCB_comment_box .hcb-wrapper {
-    clear: both;
+#HCB_comment_box .hcb-wrapper-half.input-field {
+    width: 50%;
+    float: left;
+    clear: none;
 }
 
 #HCB_comment_box input.text {
     width: 95%;
+}
+
+p#hcb-comment-tb {
+    color: var(--links);
 }
 
 #HCB_comment_box input.submit,
@@ -126,6 +131,11 @@
 #HCB_comment_box .home-desc {
     font-size: 11px;
     text-transform: lowercase;
+}
+
+img.hcb-icon {
+    visibility: hidden;
+    display: none;
 }
 
 @media only screen and (max-width : 790px) {
