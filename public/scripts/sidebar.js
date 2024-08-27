@@ -2,9 +2,9 @@
 const sb = document.getElementById("sidebar");
 sb.innerHTML +=
     `
-    <a href="../index.html"><img src="../images/icon.png" class="icon" alt=""></a>
-    <p>SACHERSKETCHBOOK <br>HELL YA</p>
-    <!-- <a href="index.html">
+        <a href="../index.html"><img src="../images/icon.png" class="icon" alt=""></a>
+    <br>
+        <!-- <a href="index.html">
                 <div class="side-btn"> &raquo; HOME</div>
             </a> -->
     <a href="../index.html">

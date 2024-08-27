@@ -3,7 +3,7 @@ const sb = document.getElementById("sidebar");
 sb.innerHTML +=
     `
     <a href="index.html"><img src="./images/icon.png" class="icon" alt=""></a>
-    <p>SACHERSKETCHBOOK <br>HELL YA</p>
+    <br>
     <!-- <a href="index.html">
                 <div class="side-btn"> &raquo; HOME</div>
             </a> -->

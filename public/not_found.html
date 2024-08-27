@@ -5,15 +5,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
     <title>NOT FOUND</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <style>
+        :root {
+            /* general */
+            --black: #100202;
+            --backdrop: #e0d7d2;
+            --backdrop-dark: #c0bbb5;
+            --links: #5b6768;
+            --text: #100202;
+            --highlight-light: #bc6a41;
+
+            /* element-specific */
+            --topbar: #e9dfd9;
+            --grid: #c0bbb5b5;
+        }
+
+        [data-dark-mode] {
+            /* general */
+            --black: #222020;
+            --backdrop: #100d0d;
+            --backdrop-dark: var(--black);
+            --links: var(--highlight-light);
+            --text: #828882;
+            --highlight-light: #b24657;
+
+            /* element-specific */
+            --topbar: var(--links);
+            --grid: transparent;
+        }
+
+        html {
+            box-sizing: border-box;
+            vertical-align: baseline;
+            align-items: baseline;
+            max-width: fit-content;
+
+            font-family: sans-serif;
+            font-size: 1.07em;
+            font-weight: 300;
+        }
+
+        body {
+            margin: 0 auto;
+            background: var(--backdrop);
+            color: var(--text);
+            background-size: 35px 35px;
+            background-image:
+                linear-gradient(to right, var(--grid) 1.5px, transparent 1.5px),
+                linear-gradient(to bottom, var(--grid) 1.5px, transparent 1.5px);
+            display: flex;
+        }
+
+        /* used for main content block & previews in sqntl & artblog*/
+        .container {
+            display: flex;
+            margin-top: 0px;
+            margin: 0 auto;
+            /* width: 100%; */
+        }
+
+        h1 {
+            font-size: 2em;
+            background-color: var(--text);
+            font-weight: bolder;
+            color: var(--backdrop-dark);
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            margin: 0.5em 0;
+        }
+
+        /* used for main content block & previews in sqntl & artblog*/
+        .maincontainer {
+            display: flex;
+            margin-top: 0px;
+            margin: 4% 10%;
+            max-width: 1410px;
+        }
+
+        #topbar {
+            /* 1st=top/bottom, 2nd=left/right */
+            padding: 13px 30px;
+            background-color: var(--black);
+            width: 100%;
+            position: fixed;
+            z-index: 10;
+            color: var(--backdrop);
+        }
+
+        #topbar a {
+            font-family: 'Abel', sans-serif;
+            color: var(--backdrop);
+            font-weight: 100;
+            font-size: 1.08em;
+            text-decoration: none;
+            padding: 0 0.3em;
+        }
+
+        #topbar a:hover {
+            color: var(--highlight-dark);
+            font-style: oblique;
+        }
+
+        .side-btn:hover,
+        .side-btn:hover a {
+            background-color: var(--blue);
+            color: var(--highlight-dark);
+            font-style: oblique;
+            cursor: pointer;
+        }
+
+        .side-btn.theme {
+            padding: 3.5px;
+            padding-left: 31.5px;
+            background-color: var(--blue);
+            color: var(--black);
+        }
+
+        main {
+            float: right;
+        }
+
+        section {
+            background-color: var(--backdrop-dark);
+            box-shadow: 0.55em 0.55em var(--text);
+            padding: 2em 3.5em;
+            margin: 2em 1em;
+        }
+
+        a:link,
+        a:visited,
+        a:active {
+            text-decoration: underline;
+            /* text-decoration-style: double; */
+            color: var(--links);
+        }
+
+        a:hover {
+            color: var(--blue);
+        }
+
+        .checked {
+            text-decoration: line-through;
+        }
+
+        ::selection {
+            background: var(--highlight-light);
+        }
+    </style>
 </head>
+
 <div id="topbar">
-    <button type="button" onclick="responsive()" aria-label="menu" class="burger"
-        style="display: inline;">&#9776;</button>
-    <a href="./index.html">&loz; SĀCHER</a>
+    <a href="https://sachersketchbook.neocities.org/" class="index-small">&loz; SĀCHER</a>
 </div>
+
 <body>
     <div class="maincontainer">
         <div class="sidecontainer">
@@ -83,6 +230,12 @@
         </main>
         <!-- container end -->
     </div>
+
+    <script>
+        if (localStorage.getItem('theme') == 'dark') {
+            document.querySelector('html').toggleAttribute('data-dark-mode');
+        }
+    </script>
 </body>
 
 </html>

@@ -61,7 +61,6 @@ html {
     font-family: sans-serif;
     font-size: 1.07em;
     font-weight: 300;
-
 }
 
 body {
@@ -130,8 +129,8 @@ hr.small {
 }
 
 img {
-    border-radius: 5px;
-    /* border: solid 0.8px var(--black); */
+    /* border-radius: 5px; */
+    border: solid 0.8px var(--black);
 }
 
 .icon{
@@ -214,15 +213,9 @@ noscript{
     width: 80px;
 }
 
-.blinkies img {
-    padding: 0px;
-    height: 20px;
-    width: 150px;
-}
-
 /* SIDE MENU BAR */
 #sidebar {
-    top: 19%;
+    top: 13%;
     position: sticky;
     order: 1;
     width: max-content;
@@ -231,6 +224,7 @@ noscript{
     flex-direction: column;
     display: inline-flex;
     flex-wrap: nowrap;
+    width: 10em;
 }
 
 #sidebar a {
@@ -252,9 +246,8 @@ aside a:link.top-btn {
     cursor: pointer;
     outline: none;
     border: none;
-    padding: 25px 12px;
+    padding: 30px 12px;
     font-size: 1.05em;
-    border-radius: 5px;
     top: 88%;
     margin-left: 45%;   
     margin: 0;
@@ -263,12 +256,12 @@ aside a:link.top-btn {
 .side-btn {
     font-family: 'Abel', sans-serif;
     margin: 3.5px 0;
-    padding: 8px;
+    padding: 10px;
     background-color: var(--black);
-    border-radius: 30px 0 0 30px;
+    /* border-radius: 30px 0 0 30px; */
     
     color: var(--blue);
-    font-size: 1.1em;
+    font-size: 1.15em;
     padding-left: 31.5px;
 }
 
@@ -351,10 +344,10 @@ section {
     /* border: 0.8px solid var(--black); */
     /* border-radius: 10px 50px; */
     box-shadow: 0.55em 0.55em var(--text);
-    border-radius: 50px;
+    /* border-radius: 50px; */
     /* margin: 0 10px 10px; */
-    margin: 2em 1em;
     padding: 2em 3.5em;
+    margin: 2em 1em;
     /* width: 49.25vw; */
     /* max-width: 50vw; */
 }
@@ -399,7 +392,7 @@ blockquote {
 /* for monthly entries page */
 
 .gallery img{
-    width: 22.5%;
+    width: 23%;
     height: 25vw;
     margin: 0 0 10px 5px;
     object-fit: cover;
@@ -476,11 +469,11 @@ a:hover {
     }
 }
 
-@media only screen and (max-width : 850px) {
-    .icon{
-        width: 170px;
+@media only screen and (max-width : 900px) {
+    /* .icon{
+        width: 160px;
         display: block;
-    }
+    } */
     .sidecontainer {
         padding: 0;
         margin: 0;
@@ -491,7 +484,6 @@ a:hover {
         padding-right: 0;
     }
     main{
-        margin: 0;
         margin-top: 2.5em;
     }
     section{
@@ -531,26 +523,22 @@ a:hover {
     }
     .top-btn{
         margin-left: -35px;
-        top: 90%;
     }
     h1 {
         font-size: 2em;
-    }
-    html{
-        font-size: normal;
     }
     #topbar a.index{
         padding-right: 18vw;
     }
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 760px){
     #sidebar{
         display: inline-flex !important;
     }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 760px) {
     #sidebar, 
     #sidebar img, 
     #sidebar p {
@@ -558,6 +546,7 @@ a:hover {
     }
     #sidebar {
         top: 15%;
+        width: 7em;
     }
     main{
         padding-left: 0;
@@ -565,11 +554,13 @@ a:hover {
     .side-btn {
         padding: 11px;
         border-radius: 0;
-        font-size: medium;
     }
     .side-btn, .side-btn.theme{
         padding-left: 5px;
-        font-size: medium;
+        font-size: large;
+    }
+    .top-btn{
+        top: 90%;
     }
     .preview {
         margin: 25px 20px;
@@ -585,8 +576,8 @@ a:hover {
         display: none;
     }
     section {
-        margin: 2em 0 0 0 ;
-        padding: 2em;
+        margin: 1.5em 0 0 0 ;
+        padding: 1.8em;
     }
     .maincontainer{
         margin: 0;

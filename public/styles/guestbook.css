@@ -1,3 +1,9 @@
+div.HCB_comment_box {
+    font-family: sans-serif;
+    font-size: 1.07em;
+    font-weight: 300;
+}
+
 #HCB_comment_box textarea,
 #HCB_comment_box input.text,
 #HCB_comment_box #hcb_form #hcb_form_name,
@@ -8,12 +14,12 @@
     resize: vertical;
 }
 
-#hcb_form {
+/* #hcb_form {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center
-}
+} */
 
 #HCB_comment_box #hcb_form textarea,
 #HCB_comment_box #hcb_form #hcb_form_name,  #HCB_comment_box  #hcb_form_website{
@@ -22,7 +28,6 @@
 }
 
 #HCB_comment_box .hcb-wrapper {
-    /* flex: 1 0 100% */
     clear: both;
 }
 
@@ -48,7 +53,7 @@ input#hcb_submit {
     background-color: var(--black) !important;
     color: var(--links) !important;
     font-family: 'Abel', sans-serif !important;
-    font-size: 1.06em;
+    font-size: 1.07em;
     margin: 3.5px 0;
     text-transform: uppercase;
     width: max-content;
@@ -57,23 +62,11 @@ input#hcb_submit {
     border-radius: 30px;
 }
 
-
 #hcb_submit:hover {
     background-color: var(--blue) !important;
     color: var(--links);
     border: 1px solid var(--backdrop-dark);
 }
-
-/* #HCB_comment_box input.submit {
-    border-top: 1px solid #fcb1a2;
-    border-left: 1px solid #fcb1a2;
-    border-bottom: 1px solid #bb2b0f;
-    border-right: 1px solid #bb2b0f;
-    background-color: #f26646;
-    color: #000;
-    font-weight: 700;
-    cursor: pointer
-} */
 
 #HCB_comment_box div.comment {
     border-bottom: var(--text);
@@ -117,9 +110,10 @@ label#hcb_file_label a.btn-secondary,
 #HCB_comment_box #hcb_form #hcb_form_email {
     text-transform: lowercase;
     width: 95%;
-    font-size: 14px;
     padding: 8px;
     border: solid gray 1px;
+    background-color: var(--backdrop);
+
 }
 
 #HCB_comment_box #hcb_form textarea {
