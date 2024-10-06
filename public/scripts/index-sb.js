@@ -60,24 +60,27 @@ document.addEventListener("DOMContentLoaded", () => {
     if (localStorage.getItem('theme') == 'dark') {
         document.querySelector('.icon').src = './images/icon2.png';
         document.querySelector('html').toggleAttribute('data-dark-mode');
+    } else if (theme == 'light') {
+        document.querySelector('.icon').src = './images/icon.png';
+        html.removeAttribute('data-dark-mode');
     }
 });
 
 //DARK MODE TOGGLE  
 toggle.addEventListener('click', () => {
     const icon = document.querySelector('.icon');
+    
     if (theme == 'light') {
-        icon.src = './images/icon2.png';
         theme = 'dark';
-        html.toggleAttribute('data-dark-mode');
-        document.body.style.transition = 'background 0.5s';
-        console.log("Theme set to:", theme);
+        icon.src = './images/icon2.png';
+        html.toggleAttribute('data-dark-mode', true);
     } else {
-        icon.src = './images/icon.png';
         theme = 'light';
-        html.toggleAttribute('data-dark-mode');
-        document.body.style.transition = 'background 0.5s';
-        console.log("Theme set to:", theme);
+        icon.src = './images/icon.png';
+        html.removeAttribute('data-dark-mode');
     }
     localStorage.setItem('theme', theme);
+
+    document.body.style.transition = 'background 0.5s';
+    console.log("Theme set to:", theme);
 });

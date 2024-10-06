@@ -6,20 +6,14 @@
     color: var(--tltp-text);
     /* 1st=top, 2nd=right, 3rd=bottom, 4th=left */
     padding: 6px 15px 15px 15px;
-    top: 45%;
+    top: 90%;
     left: -20%;
 }
 
-/* .tooltip .tooltiptext::before {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent var(--black)
-} */
+.tooltiptext.small {
+    width: 13vw;
+    left: -15%;
+}
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
@@ -39,27 +33,29 @@
     height: 100%;
 }
 
-@media only screen and (max-width : 820px) {
+@media only screen and (max-width : 940px) {
     .songs{
         width: 30vw; 
     }
     .tooltip .tooltiptext{
-        width: 30vw;
-        /* left: -25%; */
-        top: 68%;
+        width: 28vw; 
     }
     .preview{
-        margin: 10px 5px;
+        margin: 0;
     }
+    .tooltiptext.small {
+        width: 16vw;
+        left: -10%;
+    }   
 }
 
-@media only screen and (max-width : 700px) {
+/* @media only screen and (max-width : 700px) {
     .songs{
         width: 25.5vw; 
     }
-}
+} */
 
-@media only screen and (max-width : 565px) {
+@media only screen and (max-width : 580px) {
     .songs, iframe{
         width: 100%;
     }
@@ -71,11 +67,11 @@
     }
     .tooltip .tooltiptext{
         /* width: 75vw; */
-        width: 70vw;
+        width: 100%;
         padding: 0 15px 10px 15px;
         top: 15%;
-        left: -10%;
-    }
+        left: -5%;
+    } 
 }
 
 @media only screen and (max-width : 350px) {

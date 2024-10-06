@@ -18,7 +18,6 @@ div.HCB_comment_box {
 #HCB_comment_box #hcb_form #hcb_form_name,
 #HCB_comment_box #hcb_form #hcb_form_website,
 #HCB_comment_box #hcb_form #hcb_form_email {
-    background-color: var(--backdrop);
     color: var(--text);
     resize: vertical;
 }
@@ -113,15 +112,13 @@ input#hcb_submit {
     display: none;
 } */
 
-#HCB_comment_box #hcb_form textarea,
+/* #HCB_comment_box #hcb_form textarea, */
 #HCB_comment_box #hcb_form #hcb_form_name,
 #HCB_comment_box #hcb_form #hcb_form_website,
 #HCB_comment_box #hcb_form #hcb_form_email {
-    text-transform: lowercase;
     width: 95%;
     padding: 8px;
     border: solid gray 1px;
-    background-color: var(--backdrop);
 
 }
 
@@ -133,7 +130,6 @@ input#hcb_submit {
 #HCB_comment_box #hcb_form .home-desc a,
 #HCB_comment_box .home-desc a:visited {
     color: var(--links) !important;
-    text-transform: lowercase;
     padding: 8px;
     border: none;
 }
@@ -149,7 +145,6 @@ input#hcb_submit {
 
 #HCB_comment_box .home-desc {
     font-size: 11px;
-    text-transform: lowercase;
 }
 
 img.hcb-icon {
