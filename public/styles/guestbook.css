@@ -67,7 +67,6 @@ input#hcb_submit.submit.btn {
     width: max-content;
     cursor: pointer;
     padding-block: 8px;
-    border-radius: 30px;
 }
 
 #hcb_submit:hover {
@@ -91,13 +90,6 @@ input#hcb_submit.submit.btn {
 #HCB_comment_box .hcb-link {
     color: var(--links);
     text-decoration: none;
-}
-
-/* remove if replies look weird */
-div.comment div {
-    margin: 0;
-    padding: 0;
-    height: min-content;
 }
 
 #HCB_comment_box #hcb_form textarea,

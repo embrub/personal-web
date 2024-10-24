@@ -357,7 +357,7 @@ blockquote {
     border-style: none none none solid;
     border-color: var(--text);
     border-width: 3px;
-    padding: 0 10px;
+    padding: 8px 15px;
     font-style: italic;
 }
 
