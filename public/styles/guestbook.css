@@ -56,7 +56,7 @@ div.HCB_comment_box {
     color: var(--links);
 }
 
-input#hcb_submit {
+input#hcb_submit.submit.btn {
     border: 1px solid var(--links);
     background-color: var(--black) !important;
     color: var(--links) !important;
@@ -78,8 +78,6 @@ input#hcb_submit {
 
 #HCB_comment_box div.comment {
     border-bottom: var(--text);
-    margin-bottom: 8px;
-    padding: 8px 0;
 }
 
 #HCB_comment_box .date {
@@ -93,6 +91,13 @@ input#hcb_submit {
 #HCB_comment_box .hcb-link {
     color: var(--links);
     text-decoration: none;
+}
+
+/* remove if replies look weird */
+div.comment div {
+    margin: 0;
+    padding: 0;
+    height: min-content;
 }
 
 #HCB_comment_box #hcb_form textarea,
@@ -145,11 +150,6 @@ input#hcb_submit {
 
 #HCB_comment_box .home-desc {
     font-size: 11px;
-}
-
-img.hcb-icon {
-    visibility: hidden;
-    display: none;
 }
 
 @media only screen and (max-width : 790px) {

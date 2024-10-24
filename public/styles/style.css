@@ -317,7 +317,7 @@ main {
     display: flex;
     margin-top: 0px;
     margin: 3.5% 8%;
-    max-width: 1400px;
+    max-width: 1370px;
     /* margin: 5% 10%; */
     /* max-width: 1400px; */
 }
@@ -356,8 +356,8 @@ section img{
 blockquote {
     border-style: none none none solid;
     border-color: var(--text);
-    border-width: 4px;
-    padding: 10px;
+    border-width: 3px;
+    padding: 0 10px;
     font-style: italic;
 }
 
