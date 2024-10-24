@@ -8,10 +8,6 @@ alt.js
 pre-purge/
 oldhome.html
 
-#temp hidden
-aug/
-aug.html
-
 #mac-specific
 .DS_Store
 
