@@ -9,7 +9,7 @@ html {
 
 :root {
     --black: #393635;
-    --blue: #797D78;
+    --blue: #6f766e;
     --white: silver;
     --highlight: #A33B29;
 
@@ -41,15 +41,20 @@ main {
     margin-top: 40px; */
 
     /* max-width: 740px; */
-    max-width: 800px;
+    max-width: 830px;
     margin: 42px auto;
+}
+
+iframe{
+    width: 100%;
+    height: 30vw;
 }
 
 img {
     /*formerly 49.5(?)*/
     /* width: calc(100% - 55vh); */
     /* width: 87%; */
-    width: 80%;
+    width: 85%;
     display: block;
     margin: 0 auto;
 }
@@ -60,6 +65,10 @@ img {
 
 .vert {
     width: 70%;
+}
+
+figure {
+    text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -85,6 +94,8 @@ iframe {
 ul, li {
     list-style-type: square;
 }
+
+ul > ul { list-style-type: circle; }
 
 /* .highlight {
     background-color: var(--blue);
@@ -171,13 +182,13 @@ blockquote {
     padding: 0 10px;
 }
 
-@media only screen and (max-width : 790px) {
+@media only screen and (max-width : 830px) {
     iframe {
         width: 100%;
-        height: 33vh;
+        height: 35vh;
         float: none;
     }
-    img{
+    img, img.vert {
         width: 100%;
     }
     main {
@@ -221,11 +232,10 @@ u {
     /* text-decoration-style: double; */
 }
 
-::-moz-selection {
-    /* Code for Firefox */
+/* ::-moz-selection {
     background: var(--blue);
 }
 
 ::selection {
     background: var(--blue);
-}
+} */

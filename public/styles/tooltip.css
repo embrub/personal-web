@@ -11,12 +11,34 @@
 }
 
 .tooltiptext.small {
-    width: 13vw;
-    left: -15%;
+    width: 15vw;
 }
+
+.tooltiptext.big {
+    width: 35vw;
+    top: 75%;
+    left: -25%;
+}
+
+.tooltiptext.big::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    margin-left: -5px;
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+.border img, .preview.border a img:hover{
+    box-sizing: border-box;
+    border: 15px solid transparent;
+    border-image: url(../images/border.png) 34 39 round;
 }
 
 .songs{
@@ -37,16 +59,23 @@
     .songs{
         width: 30vw; 
     }
-    .tooltip .tooltiptext{
+    .tooltip .tooltiptext, .tooltiptext.small{
         width: 28vw; 
     }
     .preview{
         margin: 0;
     }
-    .tooltiptext.small {
+    /* .tooltiptext.small {
         width: 16vw;
-        left: -10%;
-    }   
+    }    */
+    .tooltiptext.big {
+        width: 45vw;
+        left: -75%;
+        top: 60%;
+    }
+    .tooltiptext.big::after {
+        left: 60%;
+    }
 }
 
 /* @media only screen and (max-width : 700px) {
@@ -69,9 +98,20 @@
         /* width: 75vw; */
         width: 100%;
         padding: 0 15px 10px 15px;
-        top: 15%;
+        top: 25%;
         left: -5%;
     } 
+    .tooltiptext.small{
+        top: 35%;
+
+    }
+    .tooltiptext.big{
+        top: 13%;
+        left: -5%;
+    }
+    .tooltiptext.big::after {
+        display: none;
+    }
 }
 
 @media only screen and (max-width : 350px) {

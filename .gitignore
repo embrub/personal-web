@@ -1,12 +1,14 @@
 #demos/testing
 template.html
-pre-may-style-edits.css
+styles/pre-may-style-edits.css
 pre-may-style.css
 aug-style.css
 buttons/
 alt.js
 pre-purge/
 oldhome.html
+test.html
+images copy
 
 #mac-specific
 .DS_Store

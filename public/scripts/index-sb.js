@@ -2,7 +2,7 @@
 const sb = document.getElementById("sidebar");
 sb.innerHTML +=
     `
-    <a href="index.html"><img src="./images/icon.png" class="icon" alt=""></a>
+     <a href="./index.html"><img src="./images/icon.png" class="icon" alt=""></a>
     <br>
     <!-- <a href="index.html">
                 <div class="side-btn"> &raquo; HOME</div>
@@ -13,6 +13,7 @@ sb.innerHTML +=
                 &raquo; ARTBLOG
             </div>
             <nav aria-label="artblog-contents" class="dropdown-content">
+            <a href="./2024/aug.html">&rsaquo; July-Nov</a>
             <a href="./2024/may.html">&rsaquo; May-July</a>
             <a href="./2024/jan.html">&rsaquo; Jan-Apr</a>
                 <a href="./2023/oct-dec.html">&rsaquo; Oct-Dec</a>
@@ -25,8 +26,18 @@ sb.innerHTML +=
     </a>
 
     <a href="./about/index.html">
-        <div class="side-btn"> &raquo; ABOUT</div>
+        <div class="dropdown">
+            <div class="side-btn">
+                &raquo; ABOUT
+            </div>
+            <nav aria-label="about-contents" class="dropdown-content">
+            <a href="./about/myself.html">&rsaquo; about me</a>
+            <a href="./about/sitemap.html">&rsaquo; sitemap</a>
+            <a href="./about/updates.html">&rsaquo; site updates</a>
+            </nav>
+        </div>
     </a>
+
     <a href="./ocs/index.html">
         <div class="side-btn"> &raquo; OCs</div>
     </a>
@@ -40,6 +51,13 @@ sb.innerHTML +=
         <div class="side-btn theme"> &raquo; SWAP THEME</div>
     </a>
     <a href="guestbook.html"><small>guestbook</small></a>
+
+    <noscript style="width: 170px">
+        <a href="../index.html">HOME</a> |
+        <a href="../info/index.html#">SITEMAP</a>
+        <p>site relies on javascript to load the full sidebar & navigate through gallery pages.</p>
+        <p>enable js for a more complete experience :,D</p>
+    </noscript>
       `;
 
 //COLLAPSABLE SIDEBAR
