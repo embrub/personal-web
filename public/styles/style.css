@@ -38,7 +38,7 @@
     --highlight-dark: #981c45;
 
     --links: var(--highlight-light);
-    --text: #828882;
+    --text: #949c94;
 
     /* element-specific */
     --topbar: var(--links);
@@ -146,9 +146,9 @@ iframe {
     border-radius: 5px;
 }
 
-.highlight {
-    background-color: var(--journal);
-}
+/* .highlight {
+    background-color: var(--backdrop);
+} */
 
 .highlight-2{
     background-color: var(--text);
@@ -420,9 +420,6 @@ blockquote {
 }
 
 /* for journal tab */
-.journal {
-    background-color: var(--journal);
-}
 
 /* .journal h3 {
     border-bottom: 2px solid var(--text);
