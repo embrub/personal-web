@@ -10,8 +10,14 @@ oldhome.html
 test.html
 images copy
 
+#drafting
+beta.html
+beta2.html
+testing.json
+
 #mac-specific
 .DS_Store
+settings.json
 
 #incompatible filetypes
 *.mp*

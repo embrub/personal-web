@@ -167,7 +167,7 @@ a .btn:hover {
 
 .spoiler:hover,
 .spoiler:hover a {
-    color: #e0d7d2;
+    color: var(--white);
 }
 
 /* MAIN CONTENT BLOCK */

@@ -33,7 +33,7 @@ sb.innerHTML +=
             <nav aria-label="about-contents" class="dropdown-content">
             <a href="./about/myself.html">&rsaquo; about me</a>
             <a href="./about/sitemap.html">&rsaquo; sitemap</a>
-            <a href="./about/updates.html">&rsaquo; site updates</a>
+            <a href="./about/updates.html">&rsaquo; updates</a>
             </nav>
         </div>
     </a>

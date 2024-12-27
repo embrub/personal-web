@@ -38,7 +38,7 @@
     --highlight-dark: #981c45;
 
     --links: var(--highlight-light);
-    --text: #949c94;
+    --text: #979f97;
 
     /* element-specific */
     --topbar: var(--links);
@@ -135,7 +135,7 @@ hr.small {
 } */
 
 .icon{
-    width: 168px;
+    width: 170px;
 }
 
 iframe {
@@ -327,16 +327,14 @@ main {
 .maincontainer {
     display: flex;
     margin-top: 0px;
-    margin: 3.5% 8%;
-    max-width: 1370px;
-    /* margin: 5% 10%; */
-    /* max-width: 1400px; */
+    margin: 3% 10%;
+    max-width: 1450px;
+    /* margin: 5% 10%;
+    max-width: 1450px; */
 }
 
 section {
     background-color: var(--backdrop-dark);
-    /* border: 0.8px solid var(--black); */
-    /* border-radius: 10px 50px; */
     box-shadow: 0.55em 0.55em var(--text);
     /* border-radius: 50px; */
     /* margin: 0 10px 10px; */
@@ -404,10 +402,10 @@ blockquote {
 /* for monthly entries page */
 
 .gallery img{
-    width: 22.7%;
-    height: 25vw;
-    /* width: 10vw;
-    height: 20vw; */
+    /* width: 22.7%;
+    height: 25vw; */
+    width: 10vw;
+    height: 20vw;
     margin: 0 0 10px 5px;
     object-fit: cover;
 }
@@ -419,24 +417,21 @@ blockquote {
     margin: 0.5vw;
 }
 
-/* for journal tab */
-
-/* .journal h3 {
-    border-bottom: 2px solid var(--text);
-    border-top: 2px solid var(--text);
-    line-height: 0;
-    margin:10px 0 20px;
-} */
-
-.journal hr {
-    border: solid 2.5px var(--text);
-}
-
 /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.spoiler {
+    color: var(--text);
+    background-color: var(--text);
+}
+
+.spoiler:hover,
+.spoiler:hover a {
+    color: #e0d7d2;
 }
 
 /* SCROLL */
@@ -579,7 +574,7 @@ a:hover {
         top: 90%;
     }
     .preview {
-        margin: 25px 20px;
+        margin: 25px 5px;
     }
     .container{
         display: block;
@@ -619,9 +614,6 @@ a:hover {
         padding: 30px 12px;
         /* display: none;
         visibility: hidden; */
-    }
-    .preview {
-        margin: 25px 5px;
     }
     #topbar a.index{
         padding-right: 4.5vw;
