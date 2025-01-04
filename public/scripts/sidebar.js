@@ -24,7 +24,13 @@ sb.innerHTML +=
             </nav>
         </div>
     </a>
-    
+
+    <a href="../ocs/index.html">
+        <div class="side-btn"> &raquo; OCs</div>
+    </a>
+    <a href="../journal/index.html">
+        <div class="side-btn"> &raquo; JOURNAL</div>
+    </a>
 
     <a href="../about/index.html">
         <div class="dropdown">
@@ -39,12 +45,6 @@ sb.innerHTML +=
         </div>
     </a>
 
-    <a href="../ocs/index.html">
-        <div class="side-btn"> &raquo; OCs</div>
-    </a>
-    <a href="../journal/index.html">
-        <div class="side-btn"> &raquo; JOURNAL</div>
-    </a>
     <a href="../favorites/index.html">
         <div class="side-btn"> &raquo; FAVORITES </div>
     </a>
