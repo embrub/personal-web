@@ -108,11 +108,22 @@ ul > ul {
 
 ol li { padding: 5px 0px; }
 
-summary, pre {
-    /* 1st=top, 2nd=right, 3rd=bottom, 4th=left */
+/* summary, pre {
     padding: 2.5px;
     padding-left: 14px;
     padding-bottom: 0;
+} */
+
+summary {
+    cursor: pointer;
+    margin-bottom: 4px;
+    color: var(--text);
+}
+
+details > div {
+    border-left: 1.5px solid var(--text);
+    padding-left: 14px;
+    margin: 0;
 }
 
 hr {
@@ -164,7 +175,7 @@ noscript{
 /* for the love of fuck dont edit this id */
 #topbar {
     /* 1st=top/bottom, 2nd=left/right */
-    padding: 13px 30px;
+    padding: 10px 30px;
     background-color: var(--black);
     width: 100%;
     position: fixed;
@@ -556,7 +567,7 @@ a:hover {
         display: none;
     }
     #sidebar {
-        top: 15%;
+        top: 8%;
         width: 7em;
     }
     main{
@@ -602,7 +613,7 @@ a:hover {
         padding: 0;
     }
     #topbar {
-        padding: 10px 30px;
+        padding: 5px 30px;
     }
     #topbar a{
         font-size: 0.97em;

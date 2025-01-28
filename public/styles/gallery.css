@@ -41,7 +41,7 @@ main {
     margin-top: 40px; */
 
     /* max-width: 740px; */
-    max-width: 830px;
+    max-width: 840px;
     margin: 42px auto;
 }
 
@@ -140,6 +140,7 @@ a .btn:hover {
 
 #topbar a {
     font-family: 'Abel', sans-serif;
+    font-weight: 100;
     font-size: 18px;
     color: var(--border);
     text-decoration: none;
