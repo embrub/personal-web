@@ -62,20 +62,16 @@
       margin: 0.5em 0;
     }
 
-    /* .sidebar h2, h3 {
-      margin-top: 25px;
-    } */
-
     .sidebar {
       margin: 0;
       padding: 10px;
-      width: 200px;
+      width: 180px;
       background-color: var(--backdrop);
       position: fixed;
       height: 100%;
       overflow: auto;
-      /* border: var(--black) dotted 1px;
-      z-index: 1; */
+      border: var(--black) dotted 1px;
+      z-index: 1;
     }
 
     .sidebar label {
@@ -106,7 +102,6 @@
     }
 
     input {
-
       &[type="checkbox"],
       &[type="radio"] {
         /* display: none; */
@@ -115,12 +110,12 @@
       }
     }
 
-    /* label{
-      background-color: var(--blue);
-      color: var(--backdrop);
-    } */
+    small {
+      font-size: x-small;
+    }
 
     div.content {
+      max-width: 100%;
       margin-left: 225px;
       padding: 1px 16px;
     }
@@ -131,10 +126,19 @@
 
     img {
       display: inline-block;
-      width: 10vw;
-      height: 20vw;
+      width: 10.2vw;
+      height: 20.5vw;
+      /* width: 11vw;
+      height: 24vw; */
       margin: 0 0 10px 5px;
+      border-radius: 5px;
       object-fit: cover;
+    }
+
+    hr {
+      border: dotted 0.5px var(--text);
+      width: 100%;
+      background-color: var(--text);
     }
 
     a:link,
@@ -149,22 +153,26 @@
       color: var(--blue);
     }
 
-    footer p {
+    footer {
       position: fixed;
       left: 0;
-      bottom: -2.25%;
+      bottom: -1.5%;
       width: 100%;
-      padding: 4px 0;
-      text-align: end;
-      background-color: var(--backdrop);
-      /* border: var(--black) dotted 1px;
-      z-index: 3; */
+      /* border: var(--black) dotted 1px; */
+      z-index: 2;
+    }
+
+    .num{
+      padding: 1.5px;
+      padding-left: 10px;
+      /* border: var(--black) dotted 1px; */
+      /* background-color: var(--backdrop-dark); */
     }
 
     .side-btn {
       /* font-family: 'Abel', sans-serif; */
       background-color: var(--text);
-
+      padding: 5px;
       color: var(--backdrop-dark);
       /* padding-left: 31.5px; */
     }
@@ -181,6 +189,7 @@
       .sidebar {
         width: 100%;
         height: auto;
+        padding: 10px 0;
         position: relative;
       }
 
@@ -190,6 +199,7 @@
 
       div.content {
         margin: 0;
+        max-width: 100%;
       }
 
       img {
@@ -197,6 +207,16 @@
         margin: 4px;
         margin-right: 0;
         height: 45vh;
+      }
+
+      footer {
+        bottom: -2.2%;
+      }
+
+      .num{
+        padding: 0;
+        background-color: var(--backdrop-dark);
+        /* border-radius: 5px;  */
       }
 
     }
@@ -221,10 +241,11 @@
 
   <div class="sidebar">
     <a href="index.html"><span class="side-btn">&ensp;&laquo;back&ensp;</span></a>
-    <h2>Sort by...</h2>
-    <br>
+    <br>    <br>
+
+    <h2>sort by...</h2>
     <div id="select">
-      <h3>medium</h3>
+      <!-- <h3>medium</h3> -->
       <label class="btn-group"><input type="radio" id="all">all</label>
       <label class="btn-group"><input type="checkbox" id="trad" class="sort">traditional</label>
       <label class="btn-group"><input type="checkbox" id="digital" class="sort">digital</label>
@@ -232,20 +253,26 @@
       <hr>
       <h3>story project</h3>
       <label class="btn-group"><input type="checkbox" id="ptc" class="sort">PTC</label>
-      <label class="btn-group"><input type="checkbox" id="am" class="sort">AM</label>
+      <label class="btn-group"><input type="checkbox" id="am" class="sort">centuriae</label>
       <label class="btn-group"><input type="checkbox" id="pm" class="sort">PM</label>
+      <label class="btn-group"><input type="checkbox" id="unlabeled" class="sort">unlabeled</label>
+      <label class="btn-group"><input type="checkbox" id="fanart" class="sort">fanart/gift</label>
 
       <hr>
       <h3>batch</h3>
+      <label class="btn-group"><input type="checkbox" id="dec-feb" class="sort">dec 2024-feb 2025</label>
+
+      <br><br>
       <label class="btn-group"><input type="checkbox" id="2024" class="sort">all 2024</label>
       <label class="btn-group"><input type="checkbox" id="july-dec" class="sort">july-dec</label>
       <label class="btn-group"><input type="checkbox" id="may-july" class="sort">may-july</label>
       <label class="btn-group"><input type="checkbox" id="jan-apr" class="sort">jan-apr</label>
+
       <br><br>
       <label class="btn-group"><input type="checkbox" id="2023" class="sort">all 2023</label>
       <label class="btn-group"><input type="checkbox" id="oct-dec" class="sort">oct-dec</label>
       <label class="btn-group"><input type="checkbox" id="aug-sept" class="sort">aug-sept</label>
-      <label class="btn-group"><input type="checkbox" id="june-july" class="sort">june-july</label>
+      <label class="btn-group"><input type="checkbox" id="june-july" class="sort">jun-jul</label>
       <label class="btn-group"><input type="checkbox" id="apr-may" class="sort">apr-may</label>
       <!-- <label class="btn-group"><input type="checkbox" id="doodles" class="sort">doodles <small>(no
           commentary)</small></label> -->
@@ -260,32 +287,76 @@
         <label class="btn-group"><input type="checkbox" id="juro" class="sort">juro</label>
         <label class="btn-group"><input type="checkbox" id="lyre" class="sort">lyre</label>
         <label class="btn-group"><input type="checkbox" id="amias" class="sort">amias</label>
-        <br>
+        <label class="btn-group"><input type="checkbox" id="trinity" class="sort">trinity</label>
+        <br><br>
         <label class="btn-group"><input type="checkbox" id="marcene" class="sort">marcene</label>
         <label class="btn-group"><input type="checkbox" id="callisto" class="sort">callisto</label>
         <label class="btn-group"><input type="checkbox" id="isra" class="sort">isra</label>
+        <br><br>
+        <label class="btn-group"><input type="checkbox" id="keyata" class="sort">keyata</label>
+        <label class="btn-group"><input type="checkbox" id="ali" class="sort">ali</label>
+        <label class="btn-group"><input type="checkbox" id="anton" class="sort">anton</label>
+        <label class="btn-group"><input type="checkbox" id="emerson" class="sort">emerson</label>
+
         <label class="btn-group"><input type="checkbox" id="sona" class="sort">sona</label>
-        <label class="btn-group"><input type="checkbox" id="other" class="sort">other</label>
-        <!-- <p>for all other characters not listed, select "other" under "story projects" instead</p> -->
+        <!-- <label class="btn-group"><input type="checkbox" id="other" class="sort">other</label> -->
+        <!-- <p><small>for OCs not listed, select "unlabeled" under "story project"</small></p> -->
       </details>
       <br>
-      <a href="#" id="reset"><span class="side-btn">&ensp;&raquo;reset selections&ensp;</span></a>
+      <!-- <a href="#" id="reset"><span class="side-btn">&ensp;&raquo;reset selections&ensp;</span></a> -->
       <!-- <a href="#" id=""><span class="side-btn">&ensp;&raquo;swap theme&ensp;</span></a> -->
     </div>
   </div>
 
   <div class="content" id="result">
-    <h1>Advanced Search</h1>
+    <h1>advanced search</h1>
     <p>i created this alternate gallery page bc i personally wanted an easier way to search for my own art. at once point i considered replacing the entire monthly batch system with this one page, but tbh this format is just way too impersonal for me to go thru with it. still very much useful though, so i'll continue to update it with every new art posted. 
       <strong>currently showing in order of the most recent month to the last.</strong>
     </p>
     <p>this is an image-heavy page, loading will be slow as fuck, i will find a way to optimize this eventually
       &#128557;</p>
 
+    <!-- dec 24-february gallery -->
+    <a href="2024/dec/the-lovers.html">
+      <img src="2024/dec/images/the-hasanlu-lovers.PNG" alt="the lovers"
+      class="dec-feb callisto isra digital am"></a>
+
+  <a href="2024/dec/rest.html">
+      <img src="2024/dec/images/rest2-3.2.PNG" alt="rest"
+      class="dec-feb giomi otis enzo digital ptc"></a>
+
+  <a href="2024/dec/comic-redraw.html">
+      <img src="2024/dec/images/redraw2.PNG" alt="comic redraw"
+      class="dec-feb archer enzo digital ptc"></a>
+
+  <a href="2024/dec/dec-doodledump.html">
+      <img src="2024/dec/images/dec-doodledump-thumb.PNG" alt="december ptc doodle dump"
+      class="dec-feb esme enzo otis juro lyre archer digital ptc"></a>
+  
+  <a href="2024/dec/savior.html">
+      <img src="2024/dec/images/isra1-3.png" alt="savior"
+      class="dec-feb isra marcene digital am"></a>
+  
+  <a href="2024/dec/zo-dec-doodles.html">
+      <img src="2024/dec/images/yet-another.PNG" alt="enzo doodles"
+      class="dec-feb enzo digital ptc"></a>
+
+  <a href="2024/dec/tacky.html">
+      <img src="2024/dec/images/fashion1.PNG" alt="tacky"
+      class="dec-feb otis enzo digital ptc"></a>
+
+  <a href="2024/dec/valentines.html">
+      <img src="2024/dec/images/valentines2.PNG" alt="valentines"
+      class="dec-feb archer lyre digital ptc"></a>
+
+  <a href="2024/dec/answers-bro.html">
+     <img src="2024/dec/images/answers.jpg" alt="answers bro"
+     class="dec-feb juro esme digital ptc"></a>
+
     <!-- july-dec 24 gallery -->
     <a href="2024/aug/prided.html">
       <img src="2024/aug/images/prided.png" alt="prided"
-        class="2024 digital july-dec enzo otis archer lyre juro giomi other ptc"></a>
+        class="2024 digital july-dec enzo otis archer lyre juro giomi prof ptc"></a>
 
     <a href="2024/aug/brainrot.html">
       <img src="2024/aug/images/brainrot.PNG" alt="brain-rot: the canvas"
@@ -345,10 +416,10 @@
         class="2024 may-july digital lyre archer ptc"></a>
     <a href="2024/may/artfight.html">
       <img src="2024/may/images/af-preview.jpg" alt="art fight 2024 compilation part 1" loading="lazy"
-        class="2024 may-july digital other"></a>
+        class="2024 may-july digital fanart"></a>
     <a href="2024/may/artfight2.html">
       <img src="2024/may/images/af-preview3.jpg" alt="art fight 2024 compilation part 2" loading="lazy"
-        class="2024 may-july digital other"></a>
+        class="2024 may-july digital fanart"></a>
 
     <!-- jan-apr 24 gallery -->
     <a href="2024/jan/et-tu.html">
@@ -362,15 +433,15 @@
         class="2024 jan-apr trad enzo ptc"></a>
     <a href="2024/jan/soulsov-doods.html">
       <img src="2024/jan/images/soulsov-crop.jpeg" alt="soulsov doodles" loading="lazy"
-        class="2024 jan-apr trad other"></a>
+        class="2024 jan-apr trad fanart"></a>
     <a href="2024/jan/pm-doods.html">
-      <img src="2024/jan/images/pm1.jpeg" alt="pm doods" loading="lazy" class="2024 jan-apr trad pm"></a>
+      <img src="2024/jan/images/pm1.jpeg" alt="pm doods" loading="lazy" class="2024 jan-apr trad ali keyata pm"></a>
     <a href="2024/jan/see-you.html">
       <img src="2024/jan/images/seeyour2.5 copy-crop.jpg" alt="see your" loading="lazy"
         class="2024 jan-apr digital archer ptc"></a>
     <a href="2024/jan/doodledump.html">
       <img src="2024/jan/images/stickynotes1-crop.png" alt="stickynotes" loading="lazy"
-        class="2024 jan-apr trad enzo juro other"></a>
+        class="2024 jan-apr trad enzo juro trinity"></a>
     <a href="2024/jan/more-oc-charts.html">
       <img src="2024/jan/images/occhart-crop2.png" alt="more charts" loading="lazy"
         class="2024 jan-apr digital lyre archer ptc"></a>
@@ -378,10 +449,10 @@
     <!-- oct-dec 23 -->
     <a href="2023/oct-dec/mech-boys.html">
       <img src="2023/oct-dec/images/mech-boys2.jpeg" alt="mech boys" loading="lazy"
-        class="2023 oct-dec trad other pm"></a>
+        class="2023 oct-dec pm trad fanart emerson ali anton"></a>
     <a href="2023/oct-dec/kairos-snippet.html">
       <img src="2023/oct-dec/images/kairos-snippet2.jpeg" alt="kairos snippet" loading="lazy"
-        class="2023 oct-dec trad other"></a>
+        class="2023 oct-dec trad unlabeled"></a>
     <a href="2023/oct-dec/esme-ref.html">
       <img src="2023/oct-dec/images/esme-ref1.PNG" alt="esme ref sheet" loading="lazy"
         class="2023 oct-dec digital esme ptc"></a>
@@ -393,7 +464,7 @@
         class="2023 oct-dec digital esme"></a>
     <a href="2023/oct-dec/doodledump.html">
       <img src="2023/oct-dec/images/kidding.jpg" alt="doodle dump" loading="lazy"
-        class="2023 oct-dec digital enzo other ptc"></a>
+        class="2023 oct-dec digital enzo unlabeled giomi ptc"></a>
 
     <!-- inktober 23 -->
     <!-- <a href="2023/inktober/compilation.html">
@@ -403,7 +474,7 @@
         class="2023 oct-dec digital callisto am"></a>
     <a href="2023/inktober/compilation.html#two">
       <img src="2023/inktober/images/inktober2.PNG" loading="lazy" alt="inktober 2023 day two"
-        class="2023 oct-dec digital pm"></a>
+        class="2023 oct-dec digital pm anton"></a>
     <a href="2023/inktober/compilation.html#three">
       <img src="2023/inktober/images/inktober3.jpg" loading="lazy" alt="inktober 2023 day three"
         class="2023 oct-dec digital isra callisto am"></a>
@@ -429,7 +500,7 @@
         class="2023 aug-sept digital amias esme ptc"></a>
     <a href="2023/aug-sept/its-trinity.html">
       <img src="2023/aug-sept/images/trinity-doodle.png" alt="it's trinity" loading="lazy"
-        class="2023 aug-sept digital other ptc"></a>
+        class="2023 aug-sept digital trinity ptc"></a>
     <a href="2023/aug-sept/pop.html">
       <img src="2023/aug-sept/images/something-visceral2.PNG" alt="pop!" loading="lazy"
         class="2023 aug-sept digital archer enzo ptc"></a>
@@ -438,7 +509,7 @@
         class="2023 aug-sept digital callisto am"></a>
     <a href="2023/aug-sept/experiments.html">
       <img src="2023/aug-sept/images/bd-fanart.jpeg" alt="experiments" loading="lazy"
-        class="2023 aug-sept digital other ptc giomi archer enzo"></a>
+        class="2023 aug-sept digital fanart ptc giomi archer enzo"></a>
     <a href="2023/aug-sept/love-n-peace.html">
       <img src="2023/aug-sept/images/love-y-peace1.jpeg" alt="love and peace" loading="lazy"
         class="2023 aug-sept digital giomi enzo otis ptc"></a>
@@ -456,25 +527,25 @@
       <img src="2023/june-july/images/preview-nothing-sacred.jpg" alt="nothing sacred" loading="lazy"
         class="2023 june-july digital callisto am"></a>
     <a href="2023/june-july/kothona-refs.html">
-        <img src="2023/june-july/images/preview-kothona-refs.jpeg" alt="kothona cast reference sheet" loading="lazy"  class="2023 june-july digital other"></a>
+        <img src="2023/june-july/images/preview-kothona-refs.jpeg" alt="kothona cast reference sheet" loading="lazy"  class="2023 june-july digital unlabeled"></a>
     <a href="2023/june-july/foxs-wedding.html">
       <img src="2023/june-july/images/preview-foxs-wedding.jpg" alt="fox's wedding" loading="lazy"
         class="2023 june-july trad lyre archer ptc"></a>
     <a href="2023/june-july/sktchbk-spread.html">
       <img src="2023/june-july/images/preview-page-spread2.jpg" alt="sketchbook spread" loading="lazy"
-        class="2023 june-july trad pm enzo ptc"></a>
+        class="2023 june-july trad pm enzo ali ptc"></a>
     <a href="2023/june-july/comfort-zo.html">
       <img src="2023/june-july/images/zo-comfort-doodle.jpeg" alt="comfort doodle" loading="lazy"
         class="2023 digital june-july enzo ptc"></a>
     <a href="2023/june-july/mariyam-maybe.html">
       <img src="2023/june-july/images/mariyam.jpeg" alt="mariyam maybe" loading="lazy"
-        class="2023 june-july digital other"></a>
+        class="2023 june-july digital fanart"></a>
     <a href="2023/june-july/ptc-memes.html">
       <img src="2023/june-july/images/meme1.png" alt="PTC memes" loading="lazy"
         class="2023 june-july digital amias giomi otis enzo archer ptc"></a>
     <a href="2023/june-july/artfight.html">
       <img src="2023/june-july/images/preview-af-1.jpg" alt="artfight compilation" loading="lazy"
-        class="2023 june-july digital other"></a>
+        class="2023 june-july digital fanart"></a>
 
     <!-- apr-may 23 -->
     <a href="2023/apr-may/isra-hbd.html">
@@ -508,10 +579,10 @@
         class="2023 trad lyre ptc"></a>
     <a href="2023/traditional/deathbody.html">
       <img src="2023/traditional/images/preview-deathbody.jpeg" alt="deathbody fanart" loading="lazy"
-        class="2023 trad other"></a>
+        class="2023 trad fanart"></a>
     <a href="2023/traditional/trades.html">
       <img src="2023/traditional/images/preview-collab.png" alt="art trades" loading="lazy"
-        class="2023 trad other enzo"></a>
+        class="2023 trad fanart enzo"></a>
     <a href="2023/traditional/ptc-doods.html">
       <img src="2023/traditional/images/preview-ptc.png" alt="ptc doodles" loading="lazy"
         class="2023 trad amias otis giomi enzo ptc"></a>
@@ -528,14 +599,14 @@
     <a href="2023/traditional/barren.html">
       <img src="2023/traditional/images/sona2.jpeg" alt="barren" loading="lazy" class="2023 trad sona"></a>
     <a href="2023/traditional/tamam.html">
-      <img src="2023/traditional/images/tamam-1.jpeg" alt="tamam" loading="lazy" class="2023 trad other"></a>
+      <img src="2023/traditional/images/tamam-1.jpeg" alt="tamam" loading="lazy" class="2023 trad fanart"></a>
   </div>
   <br>
   <footer>
-    <p>showing <span id="fewNum">#</span> of <span id="allNum">#</span>&ensp;</p>
+    <p><span class="num">showing <span id="fewNum">#</span> of <span id="allNum">#</span></span></p>
   </footer>
   <script>
-    //referenced from code by Sungjoon: https://codepen.io/MrSung/pen/oWyLdv?editors=1010 
+    //referenced from here: https://codepen.io/MrSung/pen/oWyLdv?editors=1010 
 
     // TODO: 
     // the json is ONLY really useful if we're implementing a search function. (ie. it can easily sort thru titles and tags)
@@ -547,7 +618,7 @@
       const sortAll = document.getElementById("all");
       const sortOptions = document.querySelectorAll("#select .sort");
 
-      // function to show all images
+      // show all images
       function showAllBlocks() {
         sortOptions.forEach(option => option.checked = false);
         sortAll.checked = true;
@@ -555,7 +626,7 @@
         imageCount();
       }
 
-      document.getElementById("reset").addEventListener("click", showAllBlocks);
+      // document.getElementById("reset").addEventListener("click", showAllBlocks);
 
       // function showRecent() {
       //   const recent = "july-dec";
@@ -566,7 +637,7 @@
       //   });
       // }
 
-      // function to show/hide blocks based on selected options
+      // show/hide blocks based on selected options
       function filterBlocks() {
         const selectedOptions = Array.from(sortOptions) // get user-selected checkboxes
           .filter(option => option.checked)
@@ -575,7 +646,7 @@
         sortBlocks.forEach(block => {
           const blockClasses = Array.from(block.classList);
           block.style.display = selectedOptions.every(option => blockClasses.includes(option)) ? "inline-block" : "none"; // true
-                    //change to 'contains' to get rid of 'and' behavior
+                    //change '.every' to '.some' to get rid of 'or' behavior
 
         });
 
@@ -615,7 +686,6 @@
       showAllBlocks();
     });
 
-    // json references
     // https://handlebarsjs.com/guide/#simple-expressions 
     // https://github.com/mdn/learning-area/tree/main/javascript/apis/fetching-data/can-store-xhr
 

@@ -1,0 +1,631 @@
+@font-face {
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    /* src: url(https://fonts.gstatic.com/s/abel/v18/MwQ5bhbm2POE2V9BPbh5uGM.woff2) format('woff2'); */
+    src: url(../styles/1052d6ca3993ae24a932304560a4c8b4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+    /* general */
+    --black: #100202;
+    --blue: #787d79;
+    --backdrop: #e0d7d2;
+    --backdrop-dark: #c0bbb5;
+    --highlight-light: #bc6a41;
+    --highlight-dark: #A33B29;
+
+    --links: #5b6768;
+    /* --links: var(--highlight-dark); */
+    --text: #100202;
+
+    /* element-specific */
+    --topbar: #e9dfd9;
+    /* --grid: #c0bbb5b5; */
+    --tltp-bckgrnd: var(--black);
+    --tltp-text: var(--backdrop);
+    --scroll: var(--black);
+}
+
+[data-dark-mode]{ 
+    /* general */
+    --black: #222020;
+    --blue: #828882;
+    --backdrop: #100d0d;
+    --backdrop-dark: var(--black);
+    --highlight-light: #db5b6e;
+    --highlight-dark: #981c45;
+
+    --links: var(--highlight-light);
+    --text: #979f97;
+
+    /* element-specific */
+    --topbar: var(--links);
+    /* --grid: transparent; */
+    --tltp-bckgrnd: black;
+    --tltp-text: var(--blue);
+    --scroll: var(--blue);
+}
+
+html {
+    box-sizing: border-box;
+    vertical-align: baseline;
+    align-items: baseline;
+    max-width: fit-content;    
+    
+    font-family: sans-serif;
+    font-size: 1.07em;
+    font-weight: 300;
+}
+
+body {
+    margin: 0 auto;
+    background: var(--backdrop);
+    color: var(--text);
+    background-size: 35px 35px;
+    /* background-image:
+        linear-gradient(to right, var(--grid) 1.5px, transparent 1.5px),
+        linear-gradient(to bottom, var(--grid) 1.5px, transparent 1.5px); */
+    display: flex;
+}
+
+/* used for main content block & previews in sqntl & artblog*/
+.container {
+    display: flex;
+    margin-top: 0px;
+    margin: 0 auto;
+    /* width: 100%; */
+}
+
+h1 {
+    font-size: 1.7em;
+    background-color: var(--text);
+    font-weight: bolder;
+    color: var(--backdrop-dark);
+}
+
+/* h2 {
+    font-size: 1.4em;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Abel', 'Arial Narrow', 'Lucida Sans', Arial, sans-serif; */
+    /* font-weight: 500; */
+    font-weight: 900;
+    margin: 0.5em 0;
+}
+
+ul { 
+    list-style-type: square; 
+    margin: 8.5px;
+}
+
+ul > ul { 
+    list-style-type: circle; 
+}
+
+ol li { padding: 5px 0px; }
+
+/* summary, pre {
+    padding: 2.5px;
+    padding-left: 14px;
+    padding-bottom: 0;
+} */
+summary {
+    cursor: pointer;
+    margin-bottom: 4px;
+    color: var(--text);
+}
+
+details > div {
+    border-left: 1.5px solid var(--text);
+    padding-left: 15px;
+    margin: 0;
+}
+
+hr {
+    border: solid 1.5px var(--text);
+    margin: 25px 0;
+    /* width: 20px; */
+    width: 100%;
+    background-color: var(--text);
+    padding: 0.3px;
+}
+
+hr.small {
+    border: solid 1.5px var(--black);
+    width: 20px;
+}
+
+img {
+    border-radius: 7px;
+    /* border: solid 0.8px var(--text); */
+}
+
+.icon{
+    width: 155px;
+}
+
+iframe {
+    width: 80%;
+    height: 45vh;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* .highlight {
+    background-color: var(--backdrop);
+} */
+
+.highlight-2{
+    background-color: var(--text);
+    color: var(--backdrop-dark);
+}
+
+noscript{
+    width: 170px;
+}
+
+/* TOP MENU BAR */
+
+/* for the love of fuck dont edit this id */
+#topbar {
+    /* 1st=top/bottom, 2nd=left/right */
+    padding: 5px 30px;
+    background-color: var(--black);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    color: var(--topbar);
+}
+
+#topbar a {
+    font-family: 'Abel', sans-serif;
+    color: var(--topbar);
+    font-weight: 100;
+    font-size: 1.08em;
+    text-decoration: none;
+    padding: 0 0.3em;
+}
+
+#topbar a:hover {
+    color: var(--highlight-dark);
+    font-style: oblique;
+}
+
+/* back 3 */
+#topbar a.index {
+    padding-right: 30.5vw;
+}
+
+/* back 1 */
+#topbar a.index-small {
+    padding-right: 35vw;
+}
+
+.buttons img{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    height: 31px;
+    width: 80px;
+}
+
+.blinkies img {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    height: 20px;
+    width: 150px;
+}
+
+/* SIDE MENU BAR */
+#sidebar {
+    top: 15%;
+    position: sticky;
+    order: 1;
+    width: max-content;
+
+    /* IMPORTANT DO NOT REMOVE */
+    flex-direction: column;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: auto;
+}
+
+#sidebar a {
+    text-decoration: none;
+}
+
+aside a.top-btn,
+aside a:link.top-btn {
+    text-decoration: none;
+    color: var(--backdrop);
+}
+
+.top-btn{
+    float: left;
+    font-family: 'Abel', sans-serif;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: var(--text);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 30px 12px;
+    font-size: 1.05em;
+    top: 88%;
+    margin-left: 60%;   
+}
+
+.side-btn {
+    font-family: 'Abel', sans-serif;
+    margin: 3.5px 0;
+    padding: 7px;
+    background-color: var(--black);
+    /* border-radius: 30px 0 0 30px; */
+    
+    color: var(--blue);
+    /* font-size: 1.15em; */
+    padding-left: 31.5px;
+}
+
+.side-btn:hover,
+.side-btn:hover a {
+    background-color: var(--blue);
+    color: var(--highlight-dark);
+    font-style: oblique;
+    cursor: pointer;
+}
+
+.side-btn.theme{
+    padding: 3.5px;
+    padding-left: 31.5px;
+    background-color: var(--blue);
+    color: var(--black);
+}
+
+.burger {
+    /* display: none; */
+    cursor: pointer;
+    visibility: hidden;
+    border: none;
+    background: none;
+    display: inline;
+    color: var(--blue);
+}
+
+/* DROPDOWN MENU */
+.dropdown-content, .tooltip .tooltiptext{
+    visibility: hidden;
+    position: absolute;
+    background-color: var(--highlight-light);
+    z-index: 1;
+}
+
+.dropdown nav a {
+    color: var(--black);
+    font-family: sans-serif;
+    font-weight: 120;
+    padding-left: 45px;
+    padding-right: 20px;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 9.5px;
+    justify-content: flex-start;
+    font-size: 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--blue);
+    color: var(--black);
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+}
+
+/* MAIN CONTENT BLOCK */
+main {
+    float: right;
+}
+
+/* used for main content block & previews in sqntl & artblog*/
+.maincontainer {
+    display: flex;
+    margin-top: 0px;
+    margin: 2.4% 9%;
+    max-width: 1435px;
+    /* margin: 5% 10%;
+    max-width: 1450px; */
+}
+
+section {
+    background-color: var(--backdrop-dark);
+    box-shadow: 0.55em 0.55em var(--text);
+    /* border: 0.5px solid var(--text); */
+    border-radius: 5px;
+    /* margin: 0 10px 10px; */
+    padding: 2em;
+    margin: 0 0 2em 1em;
+    /* width: 49.25vw; */
+    /* max-width: 50vw; */
+}
+
+section img{
+    max-width: 100%;
+}
+
+.scroll-updates { 
+    background-color: var(--backdrop);
+    display: block;
+    margin: 10px auto;
+    border-style: none none none solid;
+    border-color: var(--black);
+    border-width: 7px;
+    width: 90%;
+    padding: 0 20px;
+    height: 225px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+blockquote {
+    border-style: none none none solid;
+    border-color: var(--text);
+    border-width: 3px;
+    padding: 8px 15px;
+    font-style: italic;
+}
+
+.page-banners {
+    /* width: 85%;
+    display: block;
+    margin: 10px auto; */
+    display: block;
+    width: 90%;
+    height: 15vw;
+    margin: 10px auto;
+    object-fit: cover;
+}
+
+/* GALLERY STUFF */
+
+/* banners before monthly galleries */
+/* try not to change anything here */
+.preview, .tooltip {
+    position: relative;
+    justify-content: center;
+    /* 1st=top, 2nd=right, 3rd=bottom, 4th=left */
+    margin: 12px 5px 0 12px;
+}
+
+.preview img, .portrait a img {
+    width: 100%;
+    margin: 0;
+    border: 2.5px solid var(--backdrop-dark);
+}
+ 
+.preview a img:hover, .portrait a img:hover {
+    border: 2.5px solid var(--highlight-light);
+    padding: none;
+}
+
+/* for monthly entries page */
+
+.gallery img{
+    /* width: 22.7%;
+    height: 25vw; */
+    width: 11vw;
+    height: 24vw;
+    margin: 0 0 10px 5px;
+    object-fit: cover;
+}
+
+/* for the doodle page */
+.gallery-full img {
+    display: inline-block;
+    width: 46.5%;
+    margin: 0.5vw;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.spoiler {
+    color: var(--text);
+    background-color: var(--text);
+}
+
+.spoiler:hover,
+.spoiler:hover a {
+    color: var(--backdrop);
+}
+
+/* SCROLL */
+::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4); */
+    background-color: var(--backdrop-dark);
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+    background-color: var(--scroll);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll);
+    cursor: pointer;
+}
+
+#sidebar noscript a,
+a:link,
+a:visited,
+a:active{
+    text-decoration: underline;
+    color: var(--links);
+}
+
+a:hover {
+    color: var(--highlight-dark);
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+::selection {
+    background: var(--highlight-light);
+}
+
+::-moz-selection {
+    background: var(--highlight-light);
+}
+
+/* @media only screen and (max-width : 1000px) {
+    .gallery img {
+        width: 30%;
+    }
+} */
+
+@media only screen and (max-width : 940px) {
+    .gallery img {
+        width: 30%;
+    }
+    .icon, #sidebar{
+        width: 145px;
+        display: block;
+    }
+    .side-btn, .side-btn.theme{
+        padding-right: 0;
+    }
+    section{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    /* if you want to return the sidebar to the top of the screen, get rid of this */
+    .maincontainer{
+        margin: 2.4% 1%;
+    }
+    .scroll-updates{
+        width: fit-content;
+    }
+    .page-banners{
+        width: max-content;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .gallery img{
+        width: 46.15%;
+        margin: 4px;
+        margin-right: 0;
+        height: 45vh;
+    }
+    .preview {
+        /* 1st=top, 2nd=right, 3rd=bottom, 4th=left */
+        margin: 15px 0 5px 13px;    
+    }
+    .gallery-full img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: 15px auto;
+    }
+    iframe {
+        width: 100%;
+        height: 38vh;
+    }
+    .top-btn{
+        margin-left: -35px;
+    }
+    #topbar a.index{
+        padding-right: 18vw;
+    }
+    ::-webkit-scrollbar-track, ::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 580px){
+    #sidebar{
+        display: inline-flex !important;
+    }
+}
+
+@media only screen and (max-width : 580px) {
+    #sidebar, 
+    #sidebar img, 
+    #sidebar p {
+        display: none;
+    }
+    #sidebar {
+        top: 10%;
+        width: 7em;
+    }
+    /* .side-btn {
+        padding: 11px;
+        border-radius: 0;
+    } */
+    .side-btn, .side-btn.theme{
+        padding-left: 5px;
+        font-size: large;
+    }
+    .top-btn{
+        top: 90%;
+    }
+    .preview {
+        margin: 25px 5px;
+    }
+    .container{
+        display: block;
+    }
+    iframe{
+        width: 100%;
+        height: 50vw;
+    }
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+    section {
+        margin: 0 0 1.2em 0;
+        padding: 1.5em;
+    }
+    .maincontainer{
+        margin-left: 0;
+    }
+    .burger {
+        margin: 0;
+        margin-right: 0;
+        margin-left: -18px;
+        visibility: visible;
+        font-size: x-large;
+        padding: 0;
+    }
+    #topbar a{
+        font-size: 0.97em;
+    }
+    .journal img{
+        max-width: 100%;
+    }
+    .top-btn{
+        padding: 30px 12px;
+        /* display: none;
+        visibility: hidden; */
+    }
+    #topbar a.index{
+        padding-right: 4.5vw;
+    } 
+    #topbar a.index-small{
+        padding-right: 10vw;
+    }
+    ::-webkit-scrollbar-track, ::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+}
