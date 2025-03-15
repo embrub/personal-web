@@ -31,14 +31,14 @@
 [data-dark-mode]{ 
     /* general */
     --black: #222020;
-    --blue: #A7AEA7;
+    --blue: #828882;
     --backdrop: #100d0d;
     --backdrop-dark: var(--black);
-    --highlight-light: #E16678;
+    --highlight-light: #db5b6e;
     --highlight-dark: #981c45;
 
     --links: var(--highlight-light);
-    --text: #A7AEA7;
+    --text: #979f97;
 
     /* element-specific */
     --topbar: var(--links);
@@ -79,15 +79,15 @@ body {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.7em;
     background-color: var(--text);
     font-weight: bolder;
     color: var(--backdrop-dark);
 }
 
-h2 {
+/* h2 {
     font-size: 1.4em;
-}
+} */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Tahoma, Geneva, Verdana, sans-serif;
@@ -113,7 +113,6 @@ ol li { padding: 5px 0px; }
     padding-left: 14px;
     padding-bottom: 0;
 } */
-
 summary {
     cursor: pointer;
     margin-bottom: 4px;
@@ -122,7 +121,7 @@ summary {
 
 details > div {
     border-left: 1.5px solid var(--text);
-    padding-left: 14px;
+    padding-left: 15px;
     margin: 0;
 }
 
@@ -140,13 +139,13 @@ hr.small {
     width: 20px;
 }
 
-/* img {
-    border-radius: 5px;
-    border: solid 0.8px var(--black);
-} */
+img {
+    border-radius: 7px;
+    /* border: solid 0.8px var(--text); */
+}
 
 .icon{
-    width: 160px;
+    width: 155px;
 }
 
 iframe {
@@ -175,7 +174,7 @@ noscript{
 /* for the love of fuck dont edit this id */
 #topbar {
     /* 1st=top/bottom, 2nd=left/right */
-    padding: 10px 30px;
+    padding: 5px 30px;
     background-color: var(--black);
     width: 100%;
     position: fixed;
@@ -199,7 +198,7 @@ noscript{
 
 /* back 3 */
 #topbar a.index {
-    padding-right: 31vw;
+    padding-right: 30.5vw;
 }
 
 /* back 1 */
@@ -225,7 +224,7 @@ noscript{
 
 /* SIDE MENU BAR */
 #sidebar {
-    top: 13%;
+    top: 15%;
     position: sticky;
     order: 1;
     width: max-content;
@@ -265,7 +264,7 @@ aside a:link.top-btn {
 .side-btn {
     font-family: 'Abel', sans-serif;
     margin: 3.5px 0;
-    padding: 10px;
+    padding: 7px;
     background-color: var(--black);
     /* border-radius: 30px 0 0 30px; */
     
@@ -338,8 +337,8 @@ main {
 .maincontainer {
     display: flex;
     margin-top: 0px;
-    margin: 3% 10%;
-    max-width: 1450px;
+    margin: 2.4% 9%;
+    max-width: 1435px;
     /* margin: 5% 10%;
     max-width: 1450px; */
 }
@@ -347,9 +346,10 @@ main {
 section {
     background-color: var(--backdrop-dark);
     box-shadow: 0.55em 0.55em var(--text);
-    /* border-radius: 50px; */
+    /* border: 0.5px solid var(--text); */
+    border-radius: 5px;
     /* margin: 0 10px 10px; */
-    padding: 2em 3.5em;
+    padding: 2em;
     margin: 0 0 2em 1em;
     /* width: 49.25vw; */
     /* max-width: 50vw; */
@@ -374,18 +374,20 @@ section img{
 }
 
 blockquote {
-    border-style: none none none solid;
-    border-color: var(--text);
-    border-width: 3px;
-    padding: 8px 15px;
-    font-style: italic;
+    border-left: 1.5px solid var(--text);
+    padding-left: 15px;
+    margin: 0;
 }
 
 .page-banners {
-    /* width: 81.5vh; */
-    width: 86.5%;
+    /* width: 85%;
     display: block;
+    margin: 10px auto; */
+    display: block;
+    width: 90%;
+    height: 15vw;
     margin: 10px auto;
+    object-fit: cover;
 }
 
 /* GALLERY STUFF */
@@ -396,11 +398,11 @@ blockquote {
     position: relative;
     justify-content: center;
     /* 1st=top, 2nd=right, 3rd=bottom, 4th=left */
-    margin: 5px 0 0 5px;
+    margin: 12px 5px 0 12px;
 }
 
 .preview img, .portrait a img {
-    width: 95%;
+    width: 100%;
     margin: 0;
     border: 2.5px solid var(--backdrop-dark);
 }
@@ -415,8 +417,8 @@ blockquote {
 .gallery img{
     /* width: 22.7%;
     height: 25vw; */
-    width: 10vw;
-    height: 20vw;
+    width: 11vw;
+    height: 24vw;
     margin: 0 0 10px 5px;
     object-fit: cover;
 }
@@ -442,7 +444,7 @@ blockquote {
 
 .spoiler:hover,
 .spoiler:hover a {
-    color: #e0d7d2;
+    color: var(--backdrop);
 }
 
 /* SCROLL */
@@ -470,7 +472,7 @@ a:active{
 }
 
 a:hover {
-    color: var(--blue);
+    color: var(--highlight-dark);
 }
 
 .checked{
@@ -485,26 +487,30 @@ a:hover {
     background: var(--highlight-light);
 }
 
+/* @media only screen and (max-width : 1000px) {
+    .gallery img {
+        width: 30%;
+    }
+} */
+
 @media only screen and (max-width : 980px) {
     .gallery img {
         width: 30%;
     }
     .icon, #sidebar{
-        width: 150px;
+        width: 145px;
         display: block;
     }
     .side-btn, .side-btn.theme{
         padding-right: 0;
     }
-    main{
-        margin-top: 2.5em;
-    }
     section{
         margin-left: 0;
+        margin-top: 0;
     }
     /* if you want to return the sidebar to the top of the screen, get rid of this */
     .maincontainer{
-        margin: 0 1%;
+        margin: 2.4% 1%;
     }
     .scroll-updates{
         width: fit-content;
@@ -537,18 +543,11 @@ a:hover {
     .top-btn{
         margin-left: -35px;
     }
-    h1 {
-        font-size: 2em;
-    }
     #topbar a.index{
-        padding-right: 20.5vw;
+        padding-right: 18vw;
     }
     ::-webkit-scrollbar-track, ::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
         display: none;
-    }
-    figure {
-        margin: 25px 0;
-        padding: 0;
     }
 }
 
@@ -565,16 +564,13 @@ a:hover {
         display: none;
     }
     #sidebar {
-        top: 8%;
+        top: 10%;
         width: 7em;
     }
-    main{
-        padding-left: 0;
-    }
-    .side-btn {
+    /* .side-btn {
         padding: 11px;
         border-radius: 0;
-    }
+    } */
     .side-btn, .side-btn.theme{
         padding-left: 5px;
         font-size: large;
@@ -600,18 +596,15 @@ a:hover {
         padding: 1.5em;
     }
     .maincontainer{
-        margin: 0;
+        margin-left: 0;
     }
     .burger {
         margin: 0;
         margin-right: 0;
-        margin-left: -15px;
+        margin-left: -18px;
         visibility: visible;
         font-size: x-large;
         padding: 0;
-    }
-    #topbar {
-        padding: 5px 30px;
     }
     #topbar a{
         font-size: 0.97em;

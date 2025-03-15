@@ -119,7 +119,8 @@ a .btn:hover {
 /* TOP MENU BAR */
 #topbar {
     /* 1st=top/bottom, 2nd=left/right */
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
+    padding: 6px 30px;
     padding-left: 48%;
     /* text-align: center; */
     background-color: var(--blue);
