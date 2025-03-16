@@ -116,7 +116,7 @@ ol li { padding: 5px 0px; }
 summary {
     cursor: pointer;
     margin-bottom: 4px;
-    color: var(--text);
+    /* color: var(--tltp-text); */
 }
 
 details > div {
