@@ -108,15 +108,9 @@ ul > ul {
 
 ol li { padding: 5px 0px; }
 
-/* summary, pre {
-    padding: 2.5px;
-    padding-left: 14px;
-    padding-bottom: 0;
-} */
 summary {
     cursor: pointer;
     margin-bottom: 4px;
-    /* color: var(--tltp-text); */
 }
 
 details > div {

@@ -156,15 +156,18 @@
     footer {
       position: fixed;
       left: 0;
-      bottom: -1.5%;
+      bottom: 0;
       width: 100%;
+      text-align: right;
       /* border: var(--black) dotted 1px; */
       z-index: 2;
     }
 
     .num{
       padding: 1.5px;
-      padding-left: 10px;
+      padding-right: 10px;
+      filter: invert(1);
+      mix-blend-mode: difference;
       /* border: var(--black) dotted 1px; */
       /* background-color: var(--backdrop-dark); */
     }
@@ -215,7 +218,7 @@
 
       .num{
         padding: 0;
-        background-color: var(--backdrop-dark);
+        /* background-color: var(--backdrop-dark); */
         /* border-radius: 5px;  */
       }
 
@@ -241,7 +244,7 @@
 
   <div class="sidebar">
     <a href="index.html"><span class="side-btn">&ensp;&laquo;back&ensp;</span></a>
-    <br>    <br>
+    <br><br>
 
     <h2>sort by...</h2>
     <div id="select">
@@ -249,6 +252,7 @@
       <label class="btn-group"><input type="radio" id="all">all</label>
       <label class="btn-group"><input type="checkbox" id="trad" class="sort">traditional</label>
       <label class="btn-group"><input type="checkbox" id="digital" class="sort">digital</label>
+      <!-- <label class="btn-group"><input type="checkbox" id="faves" class="sort">personal favorites</label> -->
 
       <hr>
       <h3>story project</h3>
@@ -317,134 +321,135 @@
       &#128557;</p>
 
     <!-- dec 24-february gallery -->
-    <a href="2024/dec/the-lovers.html">
-      <img src="2024/dec/images/the-hasanlu-lovers.PNG" alt="the lovers"
-      class="dec-feb callisto isra digital am"></a>
+    <a href="2024/dec-feb25/the-lovers.html">
+      <img src="2024/dec-feb25/images/the-hasanlu-lovers.PNG" alt="the lovers"
+      class="dec-feb callisto isra digital am faves"></a>
 
-  <a href="2024/dec/rest.html">
-      <img src="2024/dec/images/rest2-3.2.PNG" alt="rest"
-      class="dec-feb giomi otis enzo digital ptc"></a>
+  <a href="2024/dec-feb25/rest.html">
+      <img src="2024/dec-feb25/images/rest2-3.2.PNG" alt="rest"
+      class="dec-feb giomi otis enzo digital ptc faves"></a>
 
-  <a href="2024/dec/comic-redraw.html">
-      <img src="2024/dec/images/redraw2.PNG" alt="comic redraw"
+  <a href="2024/dec-feb25/comic-redraw.html">
+      <img src="2024/dec-feb25/images/redraw2.PNG" alt="comic redraw"
       class="dec-feb archer enzo digital ptc"></a>
 
-  <a href="2024/dec/dec-doodledump.html">
-      <img src="2024/dec/images/dec-doodledump-thumb.PNG" alt="december ptc doodle dump"
+  <a href="2024/dec-feb25/dec-doodledump.html">
+      <img src="2024/dec-feb25/images/dec-doodledump-thumb.PNG" alt="december ptc doodle dump"
       class="dec-feb esme enzo otis juro lyre archer digital ptc"></a>
   
-  <a href="2024/dec/savior.html">
-      <img src="2024/dec/images/isra1-3.png" alt="savior"
+  <a href="2024/dec-feb25/savior.html">
+      <img src="2024/dec-feb25/images/isra1-3.png" alt="savior"
       class="dec-feb isra marcene digital am"></a>
   
-  <a href="2024/dec/zo-dec-doodles.html">
-      <img src="2024/dec/images/yet-another.PNG" alt="enzo doodles"
+  <a href="2024/dec-feb25/zo-dec-doodles.html">
+      <img src="2024/dec-feb25/images/yet-another.PNG" alt="enzo doodles"
       class="dec-feb enzo digital ptc"></a>
 
-  <a href="2024/dec/tacky.html">
-      <img src="2024/dec/images/fashion1.PNG" alt="tacky"
-      class="dec-feb otis enzo digital ptc"></a>
+  <a href="2024/dec-feb25/tacky.html">
+      <img src="2024/dec-feb25/images/fashion1.PNG" alt="tacky"
+      class="dec-feb otis enzo digital ptc faves"></a>
 
-  <a href="2024/dec/valentines.html">
-      <img src="2024/dec/images/valentines2.PNG" alt="valentines"
-      class="dec-feb archer lyre digital ptc"></a>
+  <a href="2024/dec-feb25/valentines.html">
+      <img src="2024/dec-feb25/images/valentines2.PNG" alt="valentines"
+      class="dec-feb archer lyre digital faves ptc"></a>
 
-  <a href="2024/dec/answers-bro.html">
-     <img src="2024/dec/images/answers.jpg" alt="answers bro"
+  <a href="2024/dec-feb25/answers-bro.html">
+     <img src="2024/dec-feb25/images/answers.jpg" alt="answers bro"
      class="dec-feb juro esme digital ptc"></a>
 
     <!-- july-dec 24 gallery -->
-    <a href="2024/aug/prided.html">
-      <img src="2024/aug/images/prided.png" alt="prided"
-        class="2024 digital july-dec enzo otis archer lyre juro giomi prof ptc"></a>
+    <a href="2024/july-aug/prided.html">
+      <img src="2024/july-aug/images/prided.png" alt="prided"
+        class="2024 digital july-dec enzo otis archer lyre juro giomi prof ptc faves"></a>
 
-    <a href="2024/aug/brainrot.html">
-      <img src="2024/aug/images/brainrot.PNG" alt="brain-rot: the canvas"
+    <a href="2024/july-aug/brainrot.html">
+      <img src="2024/july-aug/images/brainrot.PNG" alt="brain-rot: the canvas"
         class="2024 digital july-dec enzo archer sona ptc"></a>
 
-    <a href="2024/aug/nature.html">
-      <img src="2024/aug/images/nature.PNG" alt="nature" class="2024 digital july-dec anton pm"></a>
+    <a href="2024/july-aug/nature.html">
+      <img src="2024/july-aug/images/nature.PNG" alt="nature" class="2024 digital july-dec anton pm"></a>
 
-    <a href="2024/aug/door.html">
-      <img src="2024/aug/images/img2.png" alt="cage room" class="2024 digital july-dec enzo ptc"></a>
+    <a href="2024/july-aug/door.html">
+      <img src="2024/july-aug/images/img2.png" alt="cage room" class="2024 digital july-dec enzo ptc faves"></a>
 
-    <a href="2024/aug/fire.html">
-      <img src="2024/aug/images/fire.PNG" alt="assorted otis doodles" class="2024 digital july-dec otis ptc"></a>
+    <a href="2024/july-aug/fire.html">
+      <img src="2024/july-aug/images/fire.PNG" alt="assorted otis doodles" class="2024 digital july-dec otis ptc"></a>
 
-    <a href="2024/aug/consuming.html">
-      <img src="2024/aug/images/consuming.PNG" alt="consuming" class="2024 digital july-dec ptc enzo"></a>
+    <a href="2024/july-aug/consuming.html">
+      <img src="2024/july-aug/images/consuming.PNG" alt="consuming" class="2024 digital july-dec ptc enzo faves"></a>
 
-    <a href="2024/aug/eves.html">
-      <img src="2024/aug/images/zo3.jpg" alt="eves" class="2024 july-dec digital enzo ptc"></a>
+    <a href="2024/july-aug/eves.html">
+      <img src="2024/july-aug/images/zo3.jpg" alt="eves" class="2024 july-dec digital enzo ptc"></a>
 
-    <a href="2024/aug/change.html">
-      <img src="2024/aug/images/change2.PNG" alt="ichc" class="2024 july-dec digital archer esme ptc"></a>
+    <a href="2024/july-aug/change.html">
+      <img src="2024/july-aug/images/change2.PNG" alt="ichc" class="2024 july-dec digital archer esme ptc"></a>
 
-    <a href="2024/aug/redraw.html">
-      <img src="2024/aug/images/isra-redraw5152839.PNG" alt="redraw" class="2024 july-dec digital isra am"></a>
+    <a href="2024/july-aug/redraw.html">
+      <img src="2024/july-aug/images/isra-redraw5152839.PNG" alt="redraw" class="2024 july-dec digital isra am"></a>
 
-    <a href="2024/aug/exercises.html">
-      <img src="2024/aug/images/explr-preview.PNG" alt="exercises"
+    <a href="2024/july-aug/exercises.html">
+      <img src="2024/july-aug/images/explr-preview.PNG" alt="exercises"
         class="2024 july-dec digital giomi otis enzo ptc"></a>
 
-    <a href="2024/aug/untitled.html">
-      <img src="2024/aug/images/Untitled318_20241105001628 2.jpg" alt="untitled"
-        class="2024 july-dec archer digital ptc"></a>
+    <a href="2024/july-aug/untitled.html">
+      <img src="2024/july-aug/images/Untitled318_20241105001628 2.jpg" alt="untitled"
+        class="2024 july-dec archer digital ptc faves"></a>
 
     <!-- may-july 24 gallery -->
-    <a href="2024/may/archiepop.html">
-      <img src="2024/may/images/archiepop.png" alt="archiepop & esme" class="2024 may-july digital archer esme ptc"></a>
-    <a href="2024/may/fishe.html">
-      <img src="2024/may/images/zolol.jpeg" alt="zo lol" class="2024 may-july digital ptc enzo"></a>
-    <a href="2024/may/forever.html">
-      <img src="2024/may/images/forever.png" alt="what can i even say to you"
-        class="2024 may-july digital am callisto isra"></a>
-    <a href="2024/may/love.html">
-      <img src="2024/may/images/love-preview.jpg" alt="love" loading="lazy"
+    <a href="2024/may-july/archiepop.html">
+      <img src="2024/may-july/images/archiepop.png" alt="archiepop & esme" class="2024 may-july digital archer esme ptc"></a>
+    <a href="2024/may-july/fishe.html">
+      <img src="2024/may-july/images/zolol.jpeg" alt="zo lol" class="2024 may-july digital ptc enzo faves"></a>
+    <a href="2024/may-july/forever.html">
+      <img src="2024/may-july/images/forever.png" alt="what can i even say to you"
+        class="2024 may-july digital am callisto isra faves"></a>
+    <a href="2024/may-july/love.html">
+      <img src="2024/may-july/images/love-preview.jpg" alt="love" loading="lazy"
         class="2024 may-july digital archer lyre esme enzo ptc"></a>
-    <a href="2024/may/good-things.html">
-      <img src="2024/may/images/gt-preview.jpg" alt="good things happen" loading="lazy"
-        class="2024 may-july digital callisto isra am"></a>
-    <a href="2024/may/heart4brains.html">
-      <img src="2024/may/images/hfb-preview.PNG" alt="heart for brains" loading="lazy"
-        class="2024 may-july digital archer esme ptc"></a>
-    <a href="2024/may/blackhole.html">
-      <img src="2024/may/images/bhh-preview2.PNG" alt="black hole heart" loading="lazy"
-        class="2024 may-july digital archer ptc"></a>
-    <a href="2024/may/fanta.html">
-      <img src="2024/may/images/fanta-min.PNG" alt="fanta" loading="lazy"
-        class="2024 may-july digital lyre archer ptc"></a>
-    <a href="2024/may/artfight.html">
-      <img src="2024/may/images/af-preview.jpg" alt="art fight 2024 compilation part 1" loading="lazy"
-        class="2024 may-july digital fanart"></a>
-    <a href="2024/may/artfight2.html">
-      <img src="2024/may/images/af-preview3.jpg" alt="art fight 2024 compilation part 2" loading="lazy"
-        class="2024 may-july digital fanart"></a>
+    <a href="2024/may-july/good-things.html">
+      <img src="2024/may-july/images/gt-preview.jpg" alt="good things happen" loading="lazy"
+        class="2024 may-july digital callisto isra am faves"></a>
+    <a href="2024/may-july/heart4brains.html">
+      <img src="2024/may-july/images/hfb-preview.PNG" alt="heart for brains" loading="lazy"
+        class="2024 may-july digital archer esme ptc faves"></a>
+    <a href="2024/may-july/blackhole.html">
+      <img src="2024/may-july/images/bhh-preview2.PNG" alt="black hole heart" loading="lazy"
+        class="2024 may-july digital archer ptc faves"></a>
+    <a href="2024/may-july/fanta.html">
+      <img src="2024/may-july/images/fanta-min.PNG" alt="fanta" loading="lazy"
+        class="2024 may-july digital lyre archer ptc faves"></a>
+    <a href="2024/may-july/artfight.html">
+      <img src="2024/may-july/images/af-preview.jpg" alt="art fight 2024 compilation part 1" loading="lazy"
+        class="2024 may-july digital fanart faves"></a>
+    <a href="2024/may-july/artfight2.html">
+      <img src="2024/may-july/images/af-preview3.jpg" alt="art fight 2024 compilation part 2" loading="lazy"
+        class="2024 may-july digital fanart faves"></a>
 
     <!-- jan-apr 24 gallery -->
-    <a href="2024/jan/et-tu.html">
-      <img src="2024/jan/images/am-evenyou1.jpeg" alt="even you, brutus" loading="lazy"
-        class="2024 jan-apr digital marcene callisto am"></a>
-    <a href="2024/jan/oc-charts.html">
-      <img src="2024/jan/images/occhart-crop.png" alt="filled oc charts" loading="lazy"
+    <a href="2024/jan-apr/et-tu.html">
+      <img src="2024/jan-apr/images/am-evenyou1.jpeg" alt="even you, brutus" loading="lazy"
+        class="2024 jan-apr digital marcene callisto am faves"></a>
+    <a href="2024/jan-apr/oc-charts.html">
+      <img src="2024/jan-apr/images/occhart-crop.png" alt="filled oc charts" loading="lazy"
         class="2024 jan-apr digital giomi otis amias enzo ptc"></a>
-    <a href="2024/jan/zo-doods.html">
-      <img src="2024/jan/images/zo-trad1.jpeg" alt="zo page spread" loading="lazy"
-        class="2024 jan-apr trad enzo ptc"></a>
-    <a href="2024/jan/soulsov-doods.html">
-      <img src="2024/jan/images/soulsov-crop.jpeg" alt="soulsov doodles" loading="lazy"
-        class="2024 jan-apr trad fanart"></a>
-    <a href="2024/jan/pm-doods.html">
-      <img src="2024/jan/images/pm1.jpeg" alt="pm doods" loading="lazy" class="2024 jan-apr trad ali keyata pm"></a>
-    <a href="2024/jan/see-you.html">
-      <img src="2024/jan/images/seeyour2.5 copy-crop.jpg" alt="see your" loading="lazy"
+    <a href="2024/jan-apr/zo-doods.html">
+      <img src="2024/jan-apr/images/zo-trad1.jpeg" alt="zo page spread" loading="lazy"
+        class="2024 jan-apr trad digital enzo ptc faves"></a>
+    <a href="2024/jan-apr/soulsov-doods.html">
+      <img src="2024/jan-apr/images/soulsov-crop.jpeg" alt="soulsov doodles" loading="lazy"
+        class="2024 jan-apr trad fanart faves"></a>
+    <a href="2024/jan-apr/pm-doods.html">
+      <img src="2024/jan-apr/images/pm1.jpeg" alt="pm doods" loading="lazy" 
+        class="2024 jan-apr trad ali keyata pm"></a>
+    <a href="2024/jan-apr/see-you.html">
+      <img src="2024/jan-apr/images/seeyour2.5 copy-crop.jpg" alt="see your" loading="lazy"
         class="2024 jan-apr digital archer ptc"></a>
-    <a href="2024/jan/doodledump.html">
-      <img src="2024/jan/images/stickynotes1-crop.png" alt="stickynotes" loading="lazy"
-        class="2024 jan-apr trad enzo juro trinity"></a>
-    <a href="2024/jan/more-oc-charts.html">
-      <img src="2024/jan/images/occhart-crop2.png" alt="more charts" loading="lazy"
-        class="2024 jan-apr digital lyre archer ptc"></a>
+    <a href="2024/jan-apr/doodledump.html">
+      <img src="2024/jan-apr/images/stickynotes1-crop.png" alt="stickynotes" loading="lazy"
+        class="2024 jan-apr trad digital enzo juro trinity ptc"></a>
+    <a href="2024/jan-apr/more-oc-charts.html">
+      <img src="2024/jan-apr/images/occhart-crop2.png" alt="more charts" loading="lazy"
+        class="2024 jan-apr digital lyre archer ptc faves"></a>
 
     <!-- oct-dec 23 -->
     <a href="2023/oct-dec/mech-boys.html">
@@ -477,18 +482,18 @@
         class="2023 oct-dec digital pm anton"></a>
     <a href="2023/inktober/compilation.html#three">
       <img src="2023/inktober/images/inktober3.jpg" loading="lazy" alt="inktober 2023 day three"
-        class="2023 oct-dec digital isra callisto am"></a>
+        class="2023 oct-dec digital isra callisto am faves"></a>
     <a href="2023/inktober/compilation.html#four">
       <img src="2023/inktober/images/inktober4.PNG" loading="lazy" alt="inktober 2023 day four"
-        class="2023 oct-dec digital archer enzo ptc"></a>
+        class="2023 oct-dec digital archer enzo ptc faves"></a>
     <a href="2023/inktober/compilation.html#five">
       <img src="2023/inktober/images/inktober5.png" loading="lazy" alt="inktober 2023 day five"
-        class="2023 oct-dec digital giomi ptc"></a>
+        class="2023 oct-dec digital giomi ptc faves"></a>
 
     <!-- aug-sept 23 -->
     <a href="2023/aug-sept/light.html">
       <img src="2023/aug-sept/images/light-preview.png" alt="light that never goes out" loading="lazy"
-        class="2023 aug-sept digital enzo otis ptc"></a>
+        class="2023 aug-sept digital enzo otis ptc faves"></a>
     <a href="2023/aug-sept/esme-doodl.html">
       <img src="2023/aug-sept/images/esme-doodl2.jpeg" alt="esme doodle" loading="lazy"
         class="2023 aug-sept digital esme ptc"></a>
@@ -500,16 +505,16 @@
         class="2023 aug-sept digital amias esme ptc"></a>
     <a href="2023/aug-sept/its-trinity.html">
       <img src="2023/aug-sept/images/trinity-doodle.png" alt="it's trinity" loading="lazy"
-        class="2023 aug-sept digital trinity ptc"></a>
+        class="2023 aug-sept digital trinity ptc faves"></a>
     <a href="2023/aug-sept/pop.html">
       <img src="2023/aug-sept/images/something-visceral2.PNG" alt="pop!" loading="lazy"
-        class="2023 aug-sept digital archer enzo ptc"></a>
+        class="2023 aug-sept digital archer enzo ptc faves"></a>
     <a href="2023/aug-sept/shroud.html">
       <img src="2023/aug-sept/images/funeral-shroud.jpeg" alt="shroud" loading="lazy"
         class="2023 aug-sept digital callisto am"></a>
     <a href="2023/aug-sept/experiments.html">
       <img src="2023/aug-sept/images/bd-fanart.jpeg" alt="experiments" loading="lazy"
-        class="2023 aug-sept digital fanart ptc giomi archer enzo"></a>
+        class="2023 aug-sept digital fanart ptc giomi archer enzo faves"></a>
     <a href="2023/aug-sept/love-n-peace.html">
       <img src="2023/aug-sept/images/love-y-peace1.jpeg" alt="love and peace" loading="lazy"
         class="2023 aug-sept digital giomi enzo otis ptc"></a>
@@ -519,13 +524,13 @@
     <!-- june-july 23 -->
     <a href="2023/june-july/zo-doodledump.html">
       <img src="2023/june-july/images/preview-zo-doodledump.jpg" alt="enzo doodledump" loading="lazy"
-        class="2023 june-july digital enzo ptc"></a>
+        class="2023 june-july digital enzo ptc faves"></a>
     <a href="2023/june-july/deadmanwalking.html">
       <img src="2023/june-july/images/preview-deadmanwalking.jpg" alt="dead man walking" loading="lazy"
         class="2023 june-july digital archer lyre ptc"></a>
     <a href="2023/june-july/nothing-sacred.html">
       <img src="2023/june-july/images/preview-nothing-sacred.jpg" alt="nothing sacred" loading="lazy"
-        class="2023 june-july digital callisto am"></a>
+        class="2023 june-july digital callisto am faves"></a>
     <a href="2023/june-july/kothona-refs.html">
         <img src="2023/june-july/images/preview-kothona-refs.jpeg" alt="kothona cast reference sheet" loading="lazy"  class="2023 june-july digital unlabeled"></a>
     <a href="2023/june-july/foxs-wedding.html">
@@ -571,7 +576,7 @@
 
     <!-- trad art -->
     <a href="2023/traditional/pg1.html">
-      <img src="2023/traditional/images/preview-pg1-1.jpeg" alt="damn son ok" loading="lazy" class="2023 trad sona"></a>
+      <img src="2023/traditional/images/preview-pg1-1.jpeg" alt="damn son ok" loading="lazy" class="2023 trad sona faves"></a>
     <a href="2023/traditional/pg1-bside.html">
       <img src="2023/traditional/images/preview-pg1-2.jpeg" alt="koiboi" loading="lazy" class="2023 trad enzo ptc"></a>
     <a href="2023/traditional/pg2.html">
@@ -585,7 +590,7 @@
         class="2023 trad fanart enzo"></a>
     <a href="2023/traditional/ptc-doods.html">
       <img src="2023/traditional/images/preview-ptc.png" alt="ptc doodles" loading="lazy"
-        class="2023 trad amias otis giomi enzo ptc"></a>
+        class="2023 trad amias otis giomi enzo ptc faves"></a>
     <a href="2023/traditional/agelong.html">
       <img src="2023/traditional/images/preview-agelong.jpeg" alt="agelong" loading="lazy"
         class="2023 trad enzo ptc"></a>

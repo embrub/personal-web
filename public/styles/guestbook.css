@@ -151,7 +151,7 @@ div.comment div {
     font-size: 11px;
 }
 
-@media only screen and (max-width : 790px) {
+@media only screen and (max-width : 980px) {
 
     #HCB_comment_box #hcb_form #hcb_form_name,
     #HCB_comment_box #hcb_form #hcb_form_website,

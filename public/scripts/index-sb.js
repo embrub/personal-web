@@ -4,23 +4,20 @@ sb.innerHTML +=
     `
      <a href="./index.html"><img src="./images/icon.png" class="icon" alt=""></a>
     <br>
-    <!-- <a href="index.html">
-                <div class="side-btn"> &raquo; HOME</div>
-            </a> -->
-    <a href="index.html">
+    <a href="index.html#artblog-start">
         <div class="dropdown">
             <div class="side-btn">
                 &raquo; ARTBLOG
             </div>
             <nav aria-label="artblog-contents" class="dropdown-content">
-            <a href="./2024/dec.html">&rsaquo; Dec-Feb</a>
-            <a href="./2024/may.html">&rsaquo; May-July</a>
-            <a href="./2024/jan.html">&rsaquo; Jan-Apr</a>
-                <a href="./2023/oct-dec.html">&rsaquo; Oct-Dec</a>
-                <a href="./2023/aug-sept.html">&rsaquo; Aug/Sept</a>
-                <a href="./2023/june-july.html">&rsaquo; June/July</a>
-                <a href="./2023/apr-may.html">&rsaquo; Apr/May</a>
-                <a href="./2023/traditional.html">&rsaquo; Trad Art</a>
+            <a href="./2024/dec-feb25/index.html">&rsaquo; Dec-Mar</a>
+            <a href="./2024/may-july/index.html">&rsaquo; May-July</a>
+            <a href="./2024/jan-apr/index.html">&rsaquo; Jan-Apr</a>
+                <a href="./2023/oct-dec/index.html">&rsaquo; Oct-Dec</a>
+                <a href="./2023/aug-sept/index.html">&rsaquo; Aug/Sept</a>
+                <a href="./2023/june-july/index.html">&rsaquo; June/July</a>
+                <a href="./2023/apr-may/index.html">&rsaquo; Apr/May</a>
+                <a href="./2023/traditional/index.html">&rsaquo; Trad Art</a>
             </nav>
         </div>
     </a>
